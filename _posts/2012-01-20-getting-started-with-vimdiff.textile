@@ -1,0 +1,22 @@
+---
+layout: post
+title: getting started with vimdiff
+category: general
+---
+Getting started with Vimdiff
+Keyboard Shortcuts:
+
+do - Get changes from other window into the current window.
+
+dp - Put the changes from current window into the other window.
+
+]c - Jump to the next change.
+
+[c - Jump to the previous change.
+
+Ctrl W + Ctrl W - Switch to the other split window.
+
+Update: Allan commented these two tips that I personally use quite often.
+
+If you load up two files in splits (:vs or :sp), you can do :diffthis on each window and achieve a diff of files that were already loaded in buffers
+:diffoff can be used to turn off the diff mode.]
