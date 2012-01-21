@@ -1,0 +1,10 @@
+{ "name": "Vim: The Most Efficient Editor", 
+  "sections": [ 
+    {"section":"title"},
+    {"section":"about_me"},
+    {"section":"use_os"},
+    {"section":"os_code"},
+    {"section":"os_hiring"},
+    {"section":"os_development"},
+    {"section":"final"}
+]}
