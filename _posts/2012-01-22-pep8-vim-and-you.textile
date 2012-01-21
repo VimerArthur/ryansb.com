@@ -1,0 +1,33 @@
+---
+layout: post
+title: pep8, vim, and you
+category: general
+---
+
+While it's true that "PEP8":http://www.python.org/dev/peps/pep-0008/ is only a style guideline, I think it's good to have something to keep you honest.
+
+<pre>
+$ sudo yum install pyflakes
+$ sudo yum install python-pep8
+</pre>
+
+With that you can run @pep8 myfile.py@ or @pyflakes myfile.py@ and they'll tell you what in your file violates PEP8, or is otherwise bad style.
+
+The PEP8 and Pyflakes Vim plugins are another step. So add these two lines to your vimrc:
+
+<pre>
+$ echo 'au BufWritePost *.py !pyflakes %' >> .vimrc
+$ echo 'au BufWritePost *.py !pep8 %' >> .vimrc
+</pre>
+
+And now whenever you save a file, Vim will show PEP8 violations.
+
+If you want to run them manually instead, do something like this:
+
+<pre>
+au FileType python map <buffer> <F6> :!pep8 %<CR>
+</pre>
+
+And that way, anytime you hit F6 while editing a Python file, it'll check for violations.
+
+Additionally, you can install the "PEP8 Vim Plugin":https://github.com/nvie/vim-pep8 to show the violations in a quickfix window. It also lets you quickly jump to a violation.

@@ -1,0 +1,9 @@
+{ "name": "Git Seminar",
+  "sections": [
+    {"section":"title"},
+    {"section":"intro_vcs"},
+    {"section":"get_started"},
+    {"section":"branching"},
+    {"section":"use_github"},
+    {"section":"final"}
+]}
