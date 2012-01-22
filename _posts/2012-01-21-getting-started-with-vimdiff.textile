@@ -7,7 +7,9 @@ Vimdiff is a great tool for dealing with merges, especially when you need to do 
 
 Typical usage is:
 
-<pre>vimdiff file1 file2</pre>
+{% highlight bash %}
+vimdiff file1 file2
+{% endhighlight %}
 
 Keybinding cheat sheet:
 

@@ -8,7 +8,9 @@ This is the first post to my new blog/personal site/whatever. I'm using "Jekyll"
 
 Testing Jekyll is also wicked nice, because a single command will serve up your new site on localhost:4000.
 
-<pre>jekyll --server</pre>
+{% highlight bash %}
+jekyll --server
+{% endhighlight %}
 
 Overall, it seems like a really awesome way to run a personal site.
 
