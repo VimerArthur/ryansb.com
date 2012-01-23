@@ -28,7 +28,9 @@ distributed
 * Git, Mercurial
 * store blobs
 * everyone has a copy of the database
-# locally
+* can have many remotes
+* no final authority
+* locally
 
 ---
 

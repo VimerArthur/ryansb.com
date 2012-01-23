@@ -48,7 +48,7 @@
 
 ---
 
-# in one minute
+# just one minute
 
 	!bash
 	$ git clone git://github.com/some1/project
@@ -67,7 +67,7 @@
 
 ---
 
-# cheap branching #
+# remember that cheap branching?
 
 ---
 
