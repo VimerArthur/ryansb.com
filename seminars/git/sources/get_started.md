@@ -1,6 +1,7 @@
-!SLIDE commandline incremental
-	$ mkdir mynewproject
-	$ cd mynewproject
+# Getting started
+!bash
+    $ mkdir mynewproject
+    $ cd mynewproject
 	$ git init
 	Initialized empty Git repository in 
 	/home/ryansb/mynewproject/.git/
@@ -17,8 +18,9 @@
 	 (use "git add" to track)
 	$ git add README
 
-!SLIDE bullets
-# life cycle of a file #
+---
+
+# life cycle of a file
 * untracked
 * tracked
 * modified
