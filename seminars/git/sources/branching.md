@@ -30,8 +30,18 @@ branching
 
 ---
 
-# sample branching
+# starting with branches
 
 ![](img/branching_intro.png)
 
+	!bash
+	$ git checkout branchname
+
 ---
+
+# commands
+
+	!bash
+	$ git checkout -b branchname
+	# creates a new branch with name branchname
+	# and switches you to it
