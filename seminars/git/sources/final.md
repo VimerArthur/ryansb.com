@@ -1,19 +1,21 @@
-!SLIDE subsection
-# overview #
+# overview
 
-!SLIDE bullets incremental
+---
+
 * use git[hub]
 * fast
 * flexible
 * simple
 
-!SLIDE
-# it will make collaboration better #
+---
 
-!SLIDE
+# it will make collaboration better
+
+---
+
 # questions? #
 
-!SLIDE bullets
+---
 
 # resources #
 

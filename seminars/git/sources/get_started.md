@@ -1,22 +1,22 @@
-# Getting started
-!bash
+# getting started
+    !bash
     $ mkdir mynewproject
     $ cd mynewproject
-	$ git init
-	Initialized empty Git repository in 
-	/home/ryansb/mynewproject/.git/
-	$ vim README
-	$ git status
-	 # Initial commit
-	 #
-	 # Untracked files:
-	 #   (use "git add <file>..." to include in what will
-	 #   be committed)
-	 #
-	 #       README
-	 nothing added to commit but untracked files present
-	 (use "git add" to track)
-	$ git add README
+    $ git init
+     Initialized empty Git repository in 
+     /home/ryansb/mynewproject/.git/
+    $ vim README
+    $ git status
+     # Initial commit
+     #
+     # Untracked files:
+     #   (use "git add <file>..." to include in what will
+     #   be committed)
+     #
+     #       README
+     nothing added to commit but untracked files present
+     (use "git add" to track)
+    $ git add README
 
 ---
 
@@ -27,7 +27,11 @@
 * staged
 * committed
 
-!SLIDE commandline incremental
+---
+
+# status report
+
+	!bash
 	$ git status
 	 # Initial commit
 	 #
@@ -52,7 +56,10 @@
 	 #
 	 #       modified:   README
 
-!SLIDE commandline incremental
+---
+
+# making commitments
+	!bash
 	$ git commit -m "Added README"
 	[master (root-commit) 4f3ea33] Added README
 	 1 files changed, 1 insertions(+), 0 deletions(-)
@@ -77,13 +84,15 @@
 
 		 Added README
 
-!SLIDE bullets
+---
+
 # see what changed #
 * use 'git diff'
 * by default diffs current working dir with most recent commit
 * super useful, check out 'git diff --help'
 
-!SLIDE commandline incremental
+---
+	!bash
 	$ vim hello.py
 	$ git diff
 	 diff --git a/hello.py b/hello.py
@@ -99,7 +108,9 @@
 	[master 01ee7f3] Fixed up grammar in hello.py
 	 1 files changed, 1 insertions(+), 1 deletions(-)
 
-!SLIDE bullets
+---
+
+# saving keystrokes
 * sometimes add -> commit gets annoying
 * the '-a' option stages all modifications
 * but ensure you want to commit it all
