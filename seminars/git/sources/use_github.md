@@ -46,24 +46,7 @@
 	To git@github.com:you/project.git
 	   9457e38..dbeb245  master -> feature_name
 
----
-
-# just one minute
-
-	!bash
-	$ git clone git://github.com/some1/project
-	 Cloning into project...
-	$ cd project/
-	$ vim README
-	$ git commit -am 'made it better'
-	 [master dbeb245] made it better
-	 1 files changed, 2 insertions(+), 0 deletions(-)
-	$ (fork it on github)
-	$ git remote add myfork git@github.com:you/project.git
-	$ <span class="red">git push myfork master:feature_name</span>
-	...
-	To git@github.com:you/project.git
-		9457e38..dbeb245  master -> feature_name
+improve someone else's repo, in just one minute
 
 ---
 

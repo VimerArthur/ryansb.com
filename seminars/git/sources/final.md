@@ -1,7 +1,5 @@
 # overview
 
----
-
 * use git[hub]
 * fast
 * flexible
@@ -9,15 +7,11 @@
 
 ---
 
-# it will make collaboration better
+# ???
 
 ---
 
-# questions? #
-
----
-
-# resources #
+# resources
 
 * <a href="gitref.org">gitref.org</a>
 * <a href="progit.org">progit.org</a>

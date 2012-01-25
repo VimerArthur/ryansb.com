@@ -30,18 +30,40 @@ branching
 
 ---
 
+# working with branches
+
+push one of your branches up to a remote
+
+	!bash
+	$ git push origin testfeature:experimental
+
+it's trivial to pull in the remotes of other collaborators
+
+	!bash
+	$ git checkout --track -b bacon rick/grill
+	$ git checkout -t bacon rick/grill
+
+to display all local branches
+
+	!bash
+	$ git branch
+		  master
+		* newgitseminar
+		  truncatehtml
+		  vanilla_960
+
+---
+
 # starting with branches
 
 ![](img/branching_intro.png)
 
+get a branch
+
 	!bash
 	$ git checkout branchname
 
----
-
-# commands
+create a new branch with name branchname
 
 	!bash
 	$ git checkout -b branchname
-	# creates a new branch with name branchname
-	# and switches you to it
