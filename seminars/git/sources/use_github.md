@@ -54,7 +54,7 @@ improve someone else's repo, in just one minute
 
 ---
 
-# TODO:Pull request screenshot
+![](img/pull_request.png)
 
 ---
 
