@@ -2,7 +2,7 @@
 
 ---
 
-# resources
+# Resources
 
 * <a href="http://www.python.org/doc/">python.org</a>
 * <a href="http://www.ibm.com/developerworks/opensource/library/os-python8/?ca=dgr-l...">IBM Python Tutorial</a>
