@@ -85,27 +85,22 @@ first, clear your mind
 
 ---
 
-# three stages of Git #
-<center>
-  <table>
-    <tr>
-      <th>working</th>
-      <th>staging</th>
-      <th>repo</th>
-    </tr>
-    <tr>
-      <td>uncommitted</td>
-      <td>preparing to commit</td>
-      <td>committed</td>
-    </tr>
-  </table>
-</center>
+# three (or four) stages of Git #
+![](img/three_stages.png)
+
+Protips:
+
+	!bash
+	# set commit message without opening an editor
+	git commit -m 'commit message'
+	# add only parts of what was changed
+	git add -p
 
 ---
 
 # basic workflow #
-* one: make some changes
-* two: stage snapshots of files
-* three: commit
-* four: (eventually) push
+1. ### make some changes
+1. ### stage snapshots of files
+1. ### commit
+1. ### (eventually) push
 

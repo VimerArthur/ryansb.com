@@ -509,26 +509,20 @@
       
       <!-- slide source: sources/intro_vcs.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>three stages of Git</h1></header>
+            <header><h1>three (or four) stages of Git</h1></header>
             
             
-            <section><p><center>
-  <table>
-    <tr>
-      <th>working</th>
-      <th>staging</th>
-      <th>repo</th>
-    </tr>
-    <tr>
-      <td>uncommitted</td>
-      <td>preparing to commit</td>
-      <td>committed</td>
-    </tr>
-  </table>
-</center></p></section>
+            <section><p><img alt="" src="sources/img/three_stages.png" /></p>
+<p>Protips:</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># set commit message without opening an editor</span>
+<span class="lineno">2</span> git commit -m <span class="s1">&#39;commit message&#39;</span>
+<span class="lineno">3</span> <span class="c"># add only parts of what was changed</span>
+<span class="lineno">4</span> git add -p
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -558,12 +552,20 @@
             <header><h1>basic workflow</h1></header>
             
             
-            <section><ul>
-<li>one: make some changes</li>
-<li>two: stage snapshots of files</li>
-<li>three: commit</li>
-<li>four: (eventually) push</li>
-</ul></section>
+            <section><ol>
+<li>
+<h3>make some changes</h3>
+</li>
+<li>
+<h3>stage snapshots of files</h3>
+</li>
+<li>
+<h3>commit</h3>
+</li>
+<li>
+<h3>(eventually) push</h3>
+</li>
+</ol></section>
             
           </div>
           <div class="presenter_notes">
@@ -1673,7 +1675,7 @@
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">three stages of Git</a></th>
+        <th><a href="#slide15">three (or four) stages of Git</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
