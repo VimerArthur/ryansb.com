@@ -10,6 +10,24 @@ branching
 * conveneint ways to separate tasks and features
 
 ---
+# starting with branches
+
+![](img/branching_intro.png)
+
+get a branch
+
+	!bash
+	$ git checkout branchname
+
+create a new branch with name branchname
+
+	!bash
+	$ git checkout -b branchname
+	#or
+	git branch branchname
+	git checkout branchname
+
+---
 
 # develop asynchronously
 	*   5a376b1 - Merge branch 'master' of github.com:boto/boto
@@ -52,18 +70,3 @@ to display all local branches
 		  truncatehtml
 		  vanilla_960
 
----
-
-# starting with branches
-
-![](img/branching_intro.png)
-
-get a branch
-
-	!bash
-	$ git checkout branchname
-
-create a new branch with name branchname
-
-	!bash
-	$ git checkout -b branchname

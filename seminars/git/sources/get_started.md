@@ -1,22 +1,29 @@
+# getting set up
+	!bash
+	git config user.name "Your Name"
+	git config user.email "you@your.site"
+
+---
+
 # getting started
-    !bash
-    $ mkdir mynewproject
-    $ cd mynewproject
-    $ git init
-     Initialized empty Git repository in 
-     /home/ryansb/mynewproject/.git/
-    $ vim README
-    $ git status
-     # Initial commit
-     #
-     # Untracked files:
-     #   (use "git add <file>..." to include in what will
-     #   be committed)
-     #
-     #       README
-     nothing added to commit but untracked files present
-     (use "git add" to track)
-    $ git add README
+	!bash
+	$ mkdir mynewproject
+	$ cd mynewproject
+	$ git init
+	 Initialized empty Git repository in 
+	 /home/ryansb/mynewproject/.git/
+	$ vim README
+	$ git status
+	 # Initial commit
+	 #
+	 # Untracked files:
+	 #   (use "git add <file>..." to include in what will
+	 #   be committed)
+	 #
+	 #       README
+	 nothing added to commit but untracked files present
+	 (use "git add" to track)
+	$ git add README
 
 ---
 
