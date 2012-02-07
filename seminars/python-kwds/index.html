@@ -25,7 +25,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Git</title>
+    <title>A Tour of Python Keywords</title>
     <!-- Styles -->
     
     <link rel="stylesheet" media="print" href="theme/css/print.css">
@@ -53,7 +53,7 @@
         <div class="slide">
           <div class="inner">
             
-            <header><h1>Git</h1></header>
+            <header><h1>A Tour of Python Keywords</h1></header>
             
             
           </div>
@@ -70,7 +70,7 @@
             </aside>
             
             <aside class="page_number">
-              1/43
+              1/17
             </aside>
           </footer>
         </div>
@@ -84,7 +84,7 @@
             <header><h1>Ryan Brown</h1></header>
             
             
-            <section><h1>Programmer, Git User</h1>
+            <section><h1>Python hacker</h1>
 <h3><a href="mailto:ryansb@csh.rit.edu">ryansb@csh.rit.edu</a></h3>
 <h3><a href="github.com/ryansb">github.com/ryansb</a></h3>
 <h3><a href="gplus.to/ryansb">gplus.to/ryansb</a></h3></section>
@@ -103,25 +103,25 @@
             </aside>
             
             <aside class="page_number">
-              2/43
+              2/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/intro_vcs.md -->
+      <!-- slide source: sources/intro_kwds.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
-            <header><h1>what is VCS?</h1></header>
+            <header><h1>what are keywords?</h1></header>
             
             
             <section><ul>
-<li>version control system</li>
-<li>control changes</li>
-<li>know what changed, when, and who did it</li>
-<li>share it</li>
+<li>language builtins</li>
+<li>incredibly diverse</li>
+<li>incredibly powerful</li>
+<li>use them</li>
 </ul></section>
             
           </div>
@@ -134,393 +134,30 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
+              Source: <a href="sources/intro_kwds.md">sources/intro_kwds.md</a>
             </aside>
             
             <aside class="page_number">
-              3/43
+              3/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>centralized</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              4/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>distributed</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              5/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>centralized</h1></header>
-            
-            
-            <section><ul>
-<li>SVN, RCS, Clearcase</li>
-<li>store diffs</li>
-<li>central database</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              6/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>distributed</h1></header>
-            
-            
-            <section><ul>
-<li>Git, Mercurial</li>
-<li>store blobs</li>
-<li>everyone has a copy of the database</li>
-<li>can have many remotes</li>
-<li>no final authority</li>
-<li>locally</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              7/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>why care?</h1></header>
-            
-            
-            <section><ul>
-<li>concurrency, simply</li>
-<li>easy merges</li>
-<li>fast collaboration</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              8/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>why Git?</h1></header>
-            
-            
-            <section><ul>
-<li>simple design</li>
-<li>fully distributed</li>
-<li>easily handle massive projects (linux)</li>
-<li>cheap branching</li>
-<li>flexibility</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              9/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>first, clear your mind</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              10/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>Git is fast</h1></header>
-            
-            
-            <section><ul>
-<li>almost everything is local</li>
-<li>work on planes, trains, and automobiles</li>
-<li>upload when you can</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              11/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>a commit is...</h1></header>
-            
-            
-            <section><ul>
-<li>snapshot, not a diff</li>
-<li>takes up more space, but bits are cheap</li>
-<li>acts almost like a mini filesystem</li>
-<li>store links to files that haven't changed</li>
-<li>refer to commits by checksums (not names)</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              12/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>how to stop worrying</h1></header>
-            
-            
-            <section><ul>
-<li>Git generally only adds data</li>
-<li>it's hard to lose things once committed</li>
-<li>almost always possible to roll back changes</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              13/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>a commit has...</h1></header>
-            
-            
-            <section><ul>
-<li>a checksum</li>
-<li>a list of all blobs contained in the commit</li>
-<li>a comment (please use these)</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              14/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/intro_vcs.md -->
+      <!-- slide source: sources/intro_kwds.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>three (or four) stages of Git</h1></header>
+            <header><h1>finding keywords</h1></header>
             
             
-            <section><p><img alt="" src="sources/img/three_stages.png" /></p>
-<p>Protips:</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># set commit message without opening an editor</span>
-<span class="lineno">2</span> git commit -m <span class="s1">&#39;commit message&#39;</span>
-<span class="lineno">3</span> <span class="c"># add only parts of what was changed</span>
-<span class="lineno">4</span> git add -p
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">keyword</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span>
+<span class="lineno">3</span> <span class="p">[</span><span class="s">&#39;and&#39;</span><span class="p">,</span> <span class="s">&#39;as&#39;</span><span class="p">,</span> <span class="s">&#39;assert&#39;</span><span class="p">,</span> <span class="s">&#39;break&#39;</span><span class="p">,</span> <span class="s">&#39;class&#39;</span><span class="p">,</span> <span class="s">&#39;continue&#39;</span><span class="p">,</span> <span class="s">&#39;def&#39;</span><span class="p">,</span> <span class="s">&#39;del&#39;</span><span class="p">,</span> <span class="s">&#39;elif&#39;</span><span class="p">,</span>
+<span class="lineno">4</span> <span class="s">&#39;else&#39;</span><span class="p">,</span> <span class="s">&#39;except&#39;</span><span class="p">,</span> <span class="s">&#39;exec&#39;</span><span class="p">,</span> <span class="s">&#39;finally&#39;</span><span class="p">,</span> <span class="s">&#39;for&#39;</span><span class="p">,</span> <span class="s">&#39;from&#39;</span><span class="p">,</span> <span class="s">&#39;global&#39;</span><span class="p">,</span> <span class="s">&#39;if&#39;</span><span class="p">,</span> <span class="s">&#39;import&#39;</span><span class="p">,</span>
+<span class="lineno">5</span> <span class="s">&#39;in&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;lambda&#39;</span><span class="p">,</span> <span class="s">&#39;not&#39;</span><span class="p">,</span> <span class="s">&#39;or&#39;</span><span class="p">,</span> <span class="s">&#39;pass&#39;</span><span class="p">,</span> <span class="s">&#39;print&#39;</span><span class="p">,</span> <span class="s">&#39;raise&#39;</span><span class="p">,</span> <span class="s">&#39;return&#39;</span><span class="p">,</span> <span class="s">&#39;try&#39;</span><span class="p">,</span>
+<span class="lineno">6</span> <span class="s">&#39;while&#39;</span><span class="p">,</span> <span class="s">&#39;with&#39;</span><span class="p">,</span> <span class="s">&#39;yield&#39;</span><span class="p">]</span>
 </pre></div>
 </section>
             
@@ -534,154 +171,37 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
+              Source: <a href="sources/intro_kwds.md">sources/intro_kwds.md</a>
             </aside>
             
             <aside class="page_number">
-              15/43
+              4/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/intro_vcs.md -->
+      <!-- slide source: sources/intro_kwds.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
-            <header><h1>basic workflow</h1></header>
-            
-            
-            <section><ol>
-<li>
-<h3>make some changes</h3>
-</li>
-<li>
-<h3>stage snapshots of files</h3>
-</li>
-<li>
-<h3>commit</h3>
-</li>
-<li>
-<h3>(eventually) push</h3>
-</li>
-</ol></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/intro_vcs.md">sources/intro_vcs.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              16/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/get_started.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code">
-          <div class="inner">
-            
-            <header><h1>getting set up</h1></header>
-            
-            
-            <section><div class="highlight"><pre><span class="lineno">1</span> git config user.name <span class="s2">&quot;Your Name&quot;</span>
-<span class="lineno">2</span> git config user.email <span class="s2">&quot;you@your.site&quot;</span>
-</pre></div>
-</section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              17/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/get_started.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code">
-          <div class="inner">
-            
-            <header><h1>getting started</h1></header>
-            
-            
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>mkdir mynewproject
-<span class="lineno"> 2</span> <span class="nv">$ </span><span class="nb">cd </span>mynewproject
-<span class="lineno"> 3</span> <span class="nv">$ </span>git init
-<span class="lineno"> 4</span>  Initialized empty Git repository in 
-<span class="lineno"> 5</span>  /home/ryansb/mynewproject/.git/
-<span class="lineno"> 6</span> <span class="nv">$ </span>vim README
-<span class="lineno"> 7</span> <span class="nv">$ </span>git status
-<span class="lineno"> 8</span>  <span class="c"># Initial commit</span>
-<span class="lineno"> 9</span>  <span class="c">#</span>
-<span class="lineno">10</span>  <span class="c"># Untracked files:</span>
-<span class="lineno">11</span>  <span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to include in what will</span>
-<span class="lineno">12</span>  <span class="c">#   be committed)</span>
-<span class="lineno">13</span>  <span class="c">#</span>
-<span class="lineno">14</span>  <span class="c">#       README</span>
-<span class="lineno">15</span>  nothing added to commit but untracked files present
-<span class="lineno">16</span>  <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
-<span class="lineno">17</span> <span class="nv">$ </span>git add README
-</pre></div>
-</section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              18/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/get_started.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>life cycle of a file</h1></header>
+            <header><h1>agenda</h1></header>
             
             
             <section><ul>
-<li>untracked</li>
-<li>tracked</li>
-<li>modified</li>
-<li>staged</li>
-<li>committed</li>
+<li>print</li>
+<li>from, import</li>
+<li>global, del</li>
+<li>class, def, return</li>
+<li>while, for</li>
+<li>break, continue, pass</li>
+<li>assert, in, not, and, or, is</li>
+<li>if, elif, else</li>
+<li>try, except, finally, raise</li>
+<li>exec</li>
+<li>with, as</li>
+<li>yield, lambda</li>
 </ul></section>
             
           </div>
@@ -694,47 +214,29 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
+              Source: <a href="sources/intro_kwds.md">sources/intro_kwds.md</a>
             </aside>
             
             <aside class="page_number">
-              19/43
+              5/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/get_started.md -->
+      <!-- slide source: sources/intro_kwds.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>status report</h1></header>
+            <header><h1>print</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>git status
-<span class="lineno"> 2</span>  <span class="c"># Initial commit</span>
-<span class="lineno"> 3</span>  <span class="c">#</span>
-<span class="lineno"> 4</span>  <span class="c"># Changes to be committed:</span>
-<span class="lineno"> 5</span>  <span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
-<span class="lineno"> 6</span>  <span class="c">#</span>
-<span class="lineno"> 7</span>  <span class="c">#       new file:   README</span>
-<span class="lineno"> 8</span> <span class="nv">$ </span>vim README
-<span class="lineno"> 9</span> <span class="nv">$ </span>git status
-<span class="lineno">10</span>  <span class="c"># Initial commit</span>
-<span class="lineno">11</span>  <span class="c">#</span>
-<span class="lineno">12</span>  <span class="c"># Changes to be committed:</span>
-<span class="lineno">13</span>  <span class="c">#   (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span>
-<span class="lineno">14</span>  <span class="c">#</span>
-<span class="lineno">15</span>  <span class="c">#       new file:   README</span>
-<span class="lineno">16</span>  <span class="c">#</span>
-<span class="lineno">17</span>  <span class="c"># Changes not staged for commit:</span>
-<span class="lineno">18</span>  <span class="c">#   (use &quot;git add &lt;file&gt;...&quot; to update what will</span>
-<span class="lineno">19</span>  <span class="c">#   be committed)</span>
-<span class="lineno">20</span>  <span class="c">#   (use &quot;git checkout -- &lt;file&gt;...&quot; to discard</span>
-<span class="lineno">21</span>  <span class="c">#   changes in working directory)</span>
-<span class="lineno">22</span>  <span class="c">#</span>
-<span class="lineno">23</span>  <span class="c">#       modified:   README</span>
+            <section><h1>Guess what it does!</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s">&quot;hello world&quot;</span>
+<span class="lineno">2</span>     <span class="n">hello</span> <span class="n">world</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s">&quot;hello world&quot;</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="lineno">4</span>     <span class="n">hello</span> <span class="n">worldhello</span> <span class="n">world</span>
 </pre></div>
 </section>
             
@@ -748,47 +250,31 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
+              Source: <a href="sources/intro_kwds.md">sources/intro_kwds.md</a>
             </aside>
             
             <aside class="page_number">
-              20/43
+              6/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/get_started.md -->
+      <!-- slide source: sources/from_to_global.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>making commitments</h1></header>
+            <header><h1>imported from anywhere</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>git commit -m <span class="s2">&quot;Added README&quot;</span>
-<span class="lineno"> 2</span> <span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> 4f3ea33<span class="o">]</span> Added README
-<span class="lineno"> 3</span>  1 files changed, 1 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
-<span class="lineno"> 4</span>  create mode 100644 README
-<span class="lineno"> 5</span>  &lt;Do more commits&gt;
-<span class="lineno"> 6</span> <span class="nv">$ </span>git log
-<span class="lineno"> 7</span>  commit 773c3104e641a9a86d71a99d67d113abf5709b81
-<span class="lineno"> 8</span>  Author: Ryan Brown &lt;ryansb@csh.rit.edu&gt;
-<span class="lineno"> 9</span>  Date:   Sat Nov 26 18:21:35 2011 -0500
-<span class="lineno">10</span> 
-<span class="lineno">11</span>      added hello.py
-<span class="lineno">12</span> 
-<span class="lineno">13</span>  commit 7275078f623c043cf5a22e552b4fd503c3236471
-<span class="lineno">14</span>  Author: Ryan Brown &lt;ryansb@csh.rit.edu&gt;
-<span class="lineno">15</span>  Date:   Sat Nov 26 18:20:45 2011 -0500
-<span class="lineno">16</span> 
-<span class="lineno">17</span>      More verbosity <span class="k">for </span>the README
-<span class="lineno">18</span> 
-<span class="lineno">19</span>  commit 4f3ea3369e9a0b29e41f7aef325a27b62e7938b1
-<span class="lineno">20</span>  Author: Ryan Brown &lt;ryansb@csh.rit.edu&gt;
-<span class="lineno">21</span>  Date:   Sat Nov 26 18:19:07 2011 -0500
-<span class="lineno">22</span> 
-<span class="lineno">23</span>      Added README
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">getcwd</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">getcwd</span><span class="p">()</span>
+<span class="lineno">4</span>     <span class="s">&#39;/home/user&#39;</span>
+<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">getcwd</span> <span class="k">as</span> <span class="n">pwd</span>
+<span class="lineno">6</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">pwd</span><span class="p">()</span>
+<span class="lineno">7</span>     <span class="s">&#39;/home/user&#39;</span>
 </pre></div>
 </section>
             
@@ -802,187 +288,45 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
+              Source: <a href="sources/from_to_global.md">sources/from_to_global.md</a>
             </aside>
             
             <aside class="page_number">
-              21/43
+              7/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/get_started.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>see what changed</h1></header>
-            
-            
-            <section><ul>
-<li>use 'git diff'</li>
-<li>by default diffs current working dir with most recent commit</li>
-<li>super useful, check out 'git diff --help'</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              22/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/get_started.md -->
+      <!-- slide source: sources/from_to_global.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>vim hello.py
-<span class="lineno"> 2</span> <span class="nv">$ </span>git diff
-<span class="lineno"> 3</span>  diff --git a/hello.py b/hello.py
-<span class="lineno"> 4</span>  index 3148dce..33f348b 100644
-<span class="lineno"> 5</span>  --- a/hello.py
-<span class="lineno"> 6</span>  +++ b/hello.py
-<span class="lineno"> 7</span>  @@ -1,3 +1,3 @@
-<span class="lineno"> 8</span>   <span class="c">#!/usr/bin/env python</span>
-<span class="lineno"> 9</span> 
-<span class="lineno">10</span>  -print <span class="s2">&quot;hello world&quot;</span>
-<span class="lineno">11</span>  +print <span class="s2">&quot;Hello, world!&quot;</span>
-<span class="lineno">12</span> <span class="nv">$ </span>git commit -am <span class="s2">&quot;Fixed up grammar in hello.py&quot;</span>
-<span class="lineno">13</span> <span class="o">[</span>master 01ee7f3<span class="o">]</span> Fixed up grammar in hello.py
-<span class="lineno">14</span>  1 files changed, 1 insertions<span class="o">(</span>+<span class="o">)</span>, 1 deletions<span class="o">(</span>-<span class="o">)</span>
-</pre></div>
-</section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              23/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/get_started.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>saving keystrokes</h1></header>
+            <header><h1>scoping and destroying</h1></header>
             
             
-            <section><ul>
-<li>sometimes add -&gt; commit gets annoying</li>
-<li>the '-a' option stages all modifications</li>
-<li>but ensure you want to commit it all</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/get_started.md">sources/get_started.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              24/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/checkout.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code">
-          <div class="inner">
-            
-            <header><h1>check it out</h1></header>
-            
-            
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>git log --pretty<span class="o">=</span>oneline --abbrev-commit --decorate
-<span class="lineno"> 2</span>     1c8ce74 <span class="o">(</span>HEAD, origin/newgitseminar, newgitseminar<span class="o">)</span> Added more on branching
-<span class="lineno"> 3</span>     4afbe50 Added slides <span class="k">for </span>branching
-<span class="lineno"> 4</span>     151dd2f Finished converting to vanilla markdown
-<span class="lineno"> 5</span>     5e130da Added git seminar to front page
-<span class="lineno"> 6</span>     d219f44 New Git seminar via Landslide now working
-<span class="lineno"> 7</span>     dfbc19c <span class="o">(</span>origin/master, origin/HEAD, master<span class="o">)</span> Changed length of excerpt
-<span class="lineno"> 8</span> 
-<span class="lineno"> 9</span>     <span class="c"># specify a branch that is on the remote named &#39;origin&#39;</span>
-<span class="lineno">10</span> <span class="nv">$ </span>git checkout origin/master
-<span class="lineno">11</span>     <span class="c"># specify a branch name</span>
-<span class="lineno">12</span> <span class="nv">$ </span>git checkout master
-<span class="lineno">13</span>     <span class="c"># specify commit ID (or hash)</span>
-<span class="lineno">14</span> <span class="nv">$ </span>git dfbc19c
-<span class="lineno">15</span>     <span class="c"># specify a commit that is 5 commits prior to where HEAD is</span>
-<span class="lineno">16</span> <span class="nv">$ </span>git checkout HEAD~5
+            <section><h1>global</h1>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="k">def</span> <span class="nf">fu</span><span class="p">():</span>
+<span class="lineno"> 2</span>     <span class="k">print</span> <span class="n">y</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span> <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+<span class="lineno"> 5</span>     <span class="k">global</span> <span class="n">y</span>
+<span class="lineno"> 6</span>     <span class="k">print</span> <span class="n">y</span>
+<span class="lineno"> 7</span> 
+<span class="lineno"> 8</span> <span class="n">fu</span><span class="p">()</span> <span class="c"># raises a NameError</span>
+<span class="lineno"> 9</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span>
+<span class="lineno">10</span> <span class="n">func</span><span class="p">()</span> <span class="c"># works, because global</span>
 </pre></div>
 
-<p>All those checkouts go to the same commit</p></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/checkout.md">sources/checkout.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              25/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/checkout.md -->
-      <div class="slide-wrapper">
-        <div class="slide has_code">
-          <div class="inner">
-            
-            <header><h1>check out a specific file</h1></header>
-            
-            
-            <section><div class="highlight"><pre><span class="lineno">1</span>     <span class="c"># get the older version of file &#39;filename&#39;</span>
-<span class="lineno">2</span> <span class="nv">$ </span>git checkout -- filename
-<span class="lineno">3</span>     <span class="c"># throw away all local changes and switch to branch &#39;master&#39;</span>
-<span class="lineno">4</span> <span class="nv">$ </span>git checkout -f master
+<h1>del</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;and&#39;</span><span class="p">,</span> <span class="n">z</span>
+<span class="lineno">4</span> <span class="n">hello</span> <span class="ow">and</span> <span class="o">&lt;</span><span class="nb">object</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0xb76e4740</span><span class="o">&gt;</span>
+<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span>
+<span class="lineno">6</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;and&#39;</span><span class="p">,</span> <span class="n">z</span>
+<span class="lineno">7</span> <span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s">&#39;y&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
 </pre></div>
 </section>
             
@@ -996,96 +340,40 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/checkout.md">sources/checkout.md</a>
+              Source: <a href="sources/from_to_global.md">sources/from_to_global.md</a>
             </aside>
             
             <aside class="page_number">
-              26/43
+              8/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/branching.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>branching</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/branching.md">sources/branching.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              27/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/branching.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>branching</h1></header>
-            
-            
-            <section><ul>
-<li>lightweight (creating a branch requires 40 bytes of space)</li>
-<li>pointers to different commits</li>
-<li>conveneint ways to separate tasks and features</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/branching.md">sources/branching.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              28/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/branching.md -->
+      <!-- slide source: sources/def_class_return.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>starting with branches</h1></header>
+            <header><h1>most definitely</h1></header>
             
             
-            <section><p><img alt="" src="sources/img/branching_intro.png" /></p>
-<p>get a branch</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git checkout branchname
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+<span class="lineno">2</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">def</span> <span class="nf">print_result</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="lineno">5</span>     <span class="k">print</span> <span class="n">x</span>
+<span class="lineno">6</span>     <span class="k">return</span>
 </pre></div>
 
-<p>create a new branch with name branchname</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git checkout -b branchname
-<span class="lineno">2</span> <span class="c">#or</span>
-<span class="lineno">3</span> git branch branchname
-<span class="lineno">4</span> git checkout branchname
+<h1>keep it classy</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">class</span> <span class="nc">MahClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param</span><span class="p">,</span> <span class="n">param2</span><span class="p">);</span>
+<span class="lineno">3</span>         <span class="bp">self</span><span class="o">.</span><span class="n">param</span> <span class="o">=</span> <span class="n">param</span>
+<span class="lineno">4</span>         <span class="bp">self</span><span class="o">.</span><span class="n">param2</span> <span class="o">=</span> <span class="n">param2</span>
+<span class="lineno">5</span> 
+<span class="lineno">6</span>     <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="lineno">7</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">param</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">param2</span>
 </pre></div>
 </section>
             
@@ -1099,83 +387,33 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/branching.md">sources/branching.md</a>
+              Source: <a href="sources/def_class_return.md">sources/def_class_return.md</a>
             </aside>
             
             <aside class="page_number">
-              29/43
+              9/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/branching.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>develop asynchronously</h1></header>
-            
-            
-            <section><pre><code>*   5a376b1 - Merge branch 'master' of github.com:boto/boto
-|\
-| * 2f03097 - Adding ref/dynamodb to hidden TOC.
-| *   649bad2 - Merging in @rdodev's DynamoDB tutorial and adapting it for Layer2
-| |\
-| | * d5defb8 - Little changes
-| | * 0a5046c - Starting point. We can add more details later on.
-| | * a99fb2e - Grammar fix
-| | * d5d3edb - Minor redaction edits
-| | *   e5a397f - Merge branch 'master' of git@github.com:rdodev/boto.git
-| | |\
-| | | * 8c19b40 - Fixing code example
-| | * | f35a84d - Added subsections
-</code></pre>
-<h1>merge branches whenever</h1></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/branching.md">sources/branching.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              30/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/branching.md -->
+      <!-- slide source: sources/control_flow.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>working with branches</h1></header>
+            <header><h1>break it down</h1></header>
             
             
-            <section><p>push one of your branches up to a remote</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git push origin testfeature:experimental
-</pre></div>
-
-<p>it's trivial to pull in the remotes of other collaborators</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git checkout --track -b bacon rick/grill
-<span class="lineno">2</span> <span class="nv">$ </span>git checkout -t bacon rick/grill
-</pre></div>
-
-<p>to display all local branches</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git branch
-<span class="lineno">2</span>       master
-<span class="lineno">3</span>     * newgitseminar
-<span class="lineno">4</span>       truncatehtml
-<span class="lineno">5</span>       vanilla_960
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;STOP&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="s">&#39;STOP&#39;</span><span class="p">:</span>
+<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span> <span class="s">&#39;HALTING EVERYTHING&#39;</span>
+<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span>     <span class="k">break</span>
+<span class="lineno">6</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="lineno">7</span> <span class="s">&#39;ekans&#39;</span>
+<span class="lineno">8</span> <span class="s">&#39;is&#39;</span>
+<span class="lineno">9</span> <span class="s">&#39;HALTING EVERYTHING&#39;</span>
 </pre></div>
 </section>
             
@@ -1189,25 +427,25 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/branching.md">sources/branching.md</a>
+              Source: <a href="sources/control_flow.md">sources/control_flow.md</a>
             </aside>
             
             <aside class="page_number">
-              31/43
+              10/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/use_github.md -->
+      <!-- slide source: sources/control_flow.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
-            <header><h1>github.com</h1></header>
+            <header><h1>pass the buck</h1></header>
             
             
-            <section><p><img alt="" src="sources/img/octocat.png" /></p></section>
+            <section><p>pass is great when you want to do nothing on a certain condition</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -1219,25 +457,35 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
+              Source: <a href="sources/control_flow.md">sources/control_flow.md</a>
             </aside>
             
             <aside class="page_number">
-              32/43
+              11/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/use_github.md -->
+      <!-- slide source: sources/control_flow.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
-            <header><h1>find a project</h1></header>
+            <header><h1>next time around</h1></header>
             
             
-            <section><p><img alt="" src="sources/img/search.png" /></p></section>
+            <section><pre><code>&gt;&gt;&gt; y = ['hello', 'my', 'name', 'SKIP', 'is', 'ekans']
+&gt;&gt;&gt; while y:
+&gt;&gt;&gt; if y == 'SKIP':
+&gt;&gt;&gt;     continue
+&gt;&gt;&gt; print y.pop()
+'ekans'
+'is'
+'name'
+'my'
+'hello'
+</code></pre></section>
             
           </div>
           <div class="presenter_notes">
@@ -1249,27 +497,32 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
+              Source: <a href="sources/control_flow.md">sources/control_flow.md</a>
             </aside>
             
             <aside class="page_number">
-              33/43
+              12/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/use_github.md -->
+      <!-- slide source: sources/looping.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>800,000 original projects</h1></header>
+            <header><h1>while you can</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;</span> <span class="no">Repository</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="ss">:conditions</span> <span class="o">=&gt;</span> 
-<span class="lineno">2</span>     <span class="p">{</span> <span class="ss">:parent_id</span> <span class="o">=&gt;</span> <span class="kp">nil</span><span class="p">,</span> <span class="ss">:public</span> <span class="o">=&gt;</span> <span class="mi">1</span> <span class="p">})</span>
-<span class="lineno">3</span> <span class="o">=&gt;</span> <span class="mi">805411</span>
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="lineno">4</span> <span class="s">&#39;ekans&#39;</span>
+<span class="lineno">5</span> <span class="s">&#39;is&#39;</span>
+<span class="lineno">6</span> <span class="s">&#39;name&#39;</span>
+<span class="lineno">7</span> <span class="s">&#39;my&#39;</span>
+<span class="lineno">8</span> <span class="s">&#39;hello&#39;</span>
 </pre></div>
 </section>
             
@@ -1283,103 +536,37 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
+              Source: <a href="sources/looping.md">sources/looping.md</a>
             </aside>
             
             <aside class="page_number">
-              34/43
+              13/17
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source: sources/use_github.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>be part of a community</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              35/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/use_github.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>contribute back</h1></header>
-            
-            
-            <section><ul>
-<li>fork</li>
-<li>commit</li>
-<li>push </li>
-<li>(pull request)</li>
-</ul></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              36/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/use_github.md -->
+      <!-- slide source: sources/looping.md -->
       <div class="slide-wrapper">
         <div class="slide has_code">
           <div class="inner">
             
-            <header><h1>get the code</h1></header>
+            <header><h1>give them what for</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="nv">$ </span>git clone git://github.com/some1/project
-<span class="lineno"> 2</span> Cloning into project...
-<span class="lineno"> 3</span> <span class="nv">$ </span><span class="nb">cd </span>project/
-<span class="lineno"> 4</span> <span class="nv">$ </span>vim README
-<span class="lineno"> 5</span> <span class="nv">$ </span>git commit -am <span class="s1">&#39;made it better&#39;</span>
-<span class="lineno"> 6</span> <span class="o">[</span>master dbeb245<span class="o">]</span> made it better
-<span class="lineno"> 7</span>  1 files changed, 2 insertions<span class="o">(</span>+<span class="o">)</span>, 0 deletions<span class="o">(</span>-<span class="o">)</span>
-<span class="lineno"> 8</span> <span class="nv">$ </span><span class="o">(</span>fork it on github<span class="o">)</span>
-<span class="lineno"> 9</span> <span class="nv">$ </span>git remote add myfork git@github.com:you/project.git
-<span class="lineno">10</span> <span class="nv">$ </span>git push myfork master:feature_name
-<span class="lineno">11</span> ...
-<span class="lineno">12</span> To git@github.com:you/project.git
-<span class="lineno">13</span>    9457e38..dbeb245  master -&gt; feature_name
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno"> 3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">x</span>
+<span class="lineno"> 4</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">else</span><span class="p">:</span>
+<span class="lineno"> 5</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">x</span> <span class="o">+</span> <span class="s">&#39; goodbye&#39;</span> <span class="c"># retains variables and scope of for loop</span>
+<span class="lineno"> 6</span> <span class="s">&#39;hello&#39;</span>
+<span class="lineno"> 7</span> <span class="s">&#39;my&#39;</span>
+<span class="lineno"> 8</span> <span class="s">&#39;name&#39;</span>
+<span class="lineno"> 9</span> <span class="s">&#39;is&#39;</span>
+<span class="lineno">10</span> <span class="s">&#39;ekans&#39;</span>
+<span class="lineno">11</span> <span class="s">&#39;exans goodbye&#39;</span>
 </pre></div>
-
-<p>improve someone else's repo, in just one minute</p></section>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -1391,95 +578,11 @@
           <footer>
             
             <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
+              Source: <a href="sources/looping.md">sources/looping.md</a>
             </aside>
             
             <aside class="page_number">
-              37/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/use_github.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>remember that cheap branching?</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              38/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/use_github.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            
-            <section><p><img alt="" src="sources/img/pull_request.png" /></p></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              39/43
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/use_github.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>cheap contributions</h1></header>
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/use_github.md">sources/use_github.md</a>
-            </aside>
-            
-            <aside class="page_number">
-              40/43
+              14/17
             </aside>
           </footer>
         </div>
@@ -1494,8 +597,7 @@
             
             
             <section><ul>
-<li>use git[hub]</li>
-<li>fast</li>
+<li>super handy</li>
 <li>flexible</li>
 <li>simple</li>
 </ul></section>
@@ -1514,7 +616,7 @@
             </aside>
             
             <aside class="page_number">
-              41/43
+              15/17
             </aside>
           </footer>
         </div>
@@ -1542,7 +644,7 @@
             </aside>
             
             <aside class="page_number">
-              42/43
+              16/17
             </aside>
           </footer>
         </div>
@@ -1557,9 +659,8 @@
             
             
             <section><ul>
-<li><a href="gitref.org">gitref.org</a></li>
-<li><a href="progit.org">progit.org</a></li>
-<li><a href="git-scm.com">git-scm.com</a></li>
+<li><a href="http://docs.python.org/">docs.python.org</a></li>
+<li><a href="http://docs.python.org/library/index.html">Python Standard Library Reference</a></li>
 </ul></section>
             
           </div>
@@ -1576,7 +677,7 @@
             </aside>
             
             <aside class="page_number">
-              43/43
+              17/17
             </aside>
           </footer>
         </div>
@@ -1591,7 +692,7 @@
       <caption>Table of Contents</caption>
       
       <tr id="toc-row-1">
-        <th><a href="#slide1">Git</a></th>
+        <th><a href="#slide1">A Tour of Python Keywords</a></th>
         <td><a href="#slide1">1</a></td>
       </tr>
       
@@ -1603,248 +704,92 @@
       
       
       <tr id="toc-row-3">
-        <th><a href="#slide3">what is VCS?</a></th>
+        <th><a href="#slide3">what are keywords?</a></th>
         <td><a href="#slide3">3</a></td>
       </tr>
       
       
       <tr id="toc-row-4">
-        <th><a href="#slide4">centralized</a></th>
+        <th><a href="#slide4">finding keywords</a></th>
         <td><a href="#slide4">4</a></td>
       </tr>
       
       
       <tr id="toc-row-5">
-        <th><a href="#slide5">distributed</a></th>
+        <th><a href="#slide5">agenda</a></th>
         <td><a href="#slide5">5</a></td>
       </tr>
       
       
       <tr id="toc-row-6">
-        <th><a href="#slide6">centralized</a></th>
+        <th><a href="#slide6">print</a></th>
         <td><a href="#slide6">6</a></td>
       </tr>
       
       
       <tr id="toc-row-7">
-        <th><a href="#slide7">distributed</a></th>
+        <th><a href="#slide7">imported from anywhere</a></th>
         <td><a href="#slide7">7</a></td>
       </tr>
       
       
       <tr id="toc-row-8">
-        <th><a href="#slide8">why care?</a></th>
+        <th><a href="#slide8">scoping and destroying</a></th>
         <td><a href="#slide8">8</a></td>
       </tr>
       
       
       <tr id="toc-row-9">
-        <th><a href="#slide9">why Git?</a></th>
+        <th><a href="#slide9">most definitely</a></th>
         <td><a href="#slide9">9</a></td>
       </tr>
       
       
       <tr id="toc-row-10">
-        <th><a href="#slide10">first, clear your mind</a></th>
+        <th><a href="#slide10">break it down</a></th>
         <td><a href="#slide10">10</a></td>
       </tr>
       
       
       <tr id="toc-row-11">
-        <th><a href="#slide11">Git is fast</a></th>
+        <th><a href="#slide11">pass the buck</a></th>
         <td><a href="#slide11">11</a></td>
       </tr>
       
       
       <tr id="toc-row-12">
-        <th><a href="#slide12">a commit is...</a></th>
+        <th><a href="#slide12">next time around</a></th>
         <td><a href="#slide12">12</a></td>
       </tr>
       
       
       <tr id="toc-row-13">
-        <th><a href="#slide13">how to stop worrying</a></th>
+        <th><a href="#slide13">while you can</a></th>
         <td><a href="#slide13">13</a></td>
       </tr>
       
       
       <tr id="toc-row-14">
-        <th><a href="#slide14">a commit has...</a></th>
+        <th><a href="#slide14">give them what for</a></th>
         <td><a href="#slide14">14</a></td>
       </tr>
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">three (or four) stages of Git</a></th>
+        <th><a href="#slide15">overview</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">basic workflow</a></th>
+        <th><a href="#slide16">???</a></th>
         <td><a href="#slide16">16</a></td>
       </tr>
       
       
       <tr id="toc-row-17">
-        <th><a href="#slide17">getting set up</a></th>
+        <th><a href="#slide17">resources</a></th>
         <td><a href="#slide17">17</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-18">
-        <th><a href="#slide18">getting started</a></th>
-        <td><a href="#slide18">18</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-19">
-        <th><a href="#slide19">life cycle of a file</a></th>
-        <td><a href="#slide19">19</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-20">
-        <th><a href="#slide20">status report</a></th>
-        <td><a href="#slide20">20</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-21">
-        <th><a href="#slide21">making commitments</a></th>
-        <td><a href="#slide21">21</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-22">
-        <th><a href="#slide22">see what changed</a></th>
-        <td><a href="#slide22">22</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-23">
-        <th><a href="#slide23">-</a></th>
-        <td><a href="#slide23">23</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-24">
-        <th><a href="#slide24">saving keystrokes</a></th>
-        <td><a href="#slide24">24</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-25">
-        <th><a href="#slide25">check it out</a></th>
-        <td><a href="#slide25">25</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-26">
-        <th><a href="#slide26">check out a specific file</a></th>
-        <td><a href="#slide26">26</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-27">
-        <th><a href="#slide27">branching</a></th>
-        <td><a href="#slide27">27</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-28">
-        <th><a href="#slide28">branching</a></th>
-        <td><a href="#slide28">28</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-29">
-        <th><a href="#slide29">starting with branches</a></th>
-        <td><a href="#slide29">29</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-30">
-        <th><a href="#slide30">develop asynchronously</a></th>
-        <td><a href="#slide30">30</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-31">
-        <th><a href="#slide31">working with branches</a></th>
-        <td><a href="#slide31">31</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-32">
-        <th><a href="#slide32">github.com</a></th>
-        <td><a href="#slide32">32</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-33">
-        <th><a href="#slide33">find a project</a></th>
-        <td><a href="#slide33">33</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-34">
-        <th><a href="#slide34">800,000 original projects</a></th>
-        <td><a href="#slide34">34</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-35">
-        <th><a href="#slide35">be part of a community</a></th>
-        <td><a href="#slide35">35</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-36">
-        <th><a href="#slide36">contribute back</a></th>
-        <td><a href="#slide36">36</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-37">
-        <th><a href="#slide37">get the code</a></th>
-        <td><a href="#slide37">37</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-38">
-        <th><a href="#slide38">remember that cheap branching?</a></th>
-        <td><a href="#slide38">38</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-39">
-        <th><a href="#slide39">-</a></th>
-        <td><a href="#slide39">39</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-40">
-        <th><a href="#slide40">cheap contributions</a></th>
-        <td><a href="#slide40">40</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-41">
-        <th><a href="#slide41">overview</a></th>
-        <td><a href="#slide41">41</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-42">
-        <th><a href="#slide42">???</a></th>
-        <td><a href="#slide42">42</a></td>
-      </tr>
-      
-      
-      <tr id="toc-row-43">
-        <th><a href="#slide43">resources</a></th>
-        <td><a href="#slide43">43</a></td>
       </tr>
       
       
