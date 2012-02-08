@@ -405,17 +405,17 @@
             <header><h1>break it down</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;STOP&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="s">&#39;STOP&#39;</span><span class="p">:</span>
-<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span> <span class="s">&#39;HALTING EVERYTHING&#39;</span>
-<span class="lineno">5</span> <span class="o">&gt;&gt;&gt;</span>     <span class="k">break</span>
-<span class="lineno">6</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="lineno">7</span> <span class="s">&#39;ekans&#39;</span>
-<span class="lineno">8</span> <span class="s">&#39;is&#39;</span>
-<span class="lineno">9</span> <span class="s">&#39;HALTING EVERYTHING&#39;</span>
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;STOP&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span>     <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="s">&#39;STOP&#39;</span><span class="p">:</span>
+<span class="lineno">4</span>         <span class="k">print</span> <span class="s">&#39;HALTING EVERYTHING&#39;</span>
+<span class="lineno">5</span>         <span class="k">break</span>
+<span class="lineno">6</span>     <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </pre></div>
-</section>
+
+<p>ekans</p>
+<p>is</p>
+<p>HALTING EVERYTHING</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -432,6 +432,47 @@
             
             <aside class="page_number">
               10/17
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/control_flow.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>next time around</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;SKIP&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span>     <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="s">&#39;SKIP&#39;</span><span class="p">:</span>
+<span class="lineno">4</span>         <span class="k">continue</span>
+<span class="lineno">5</span>     <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</pre></div>
+
+<p>ekans</p>
+<p>is</p>
+<p>name</p>
+<p>my</p>
+<p>hello</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/control_flow.md">sources/control_flow.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/17
             </aside>
           </footer>
         </div>
@@ -461,46 +502,6 @@
             </aside>
             
             <aside class="page_number">
-              11/17
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source: sources/control_flow.md -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            <header><h1>next time around</h1></header>
-            
-            
-            <section><pre><code>&gt;&gt;&gt; y = ['hello', 'my', 'name', 'SKIP', 'is', 'ekans']
-&gt;&gt;&gt; while y:
-&gt;&gt;&gt; if y == 'SKIP':
-&gt;&gt;&gt;     continue
-&gt;&gt;&gt; print y.pop()
-'ekans'
-'is'
-'name'
-'my'
-'hello'
-</code></pre></section>
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="source">
-              Source: <a href="sources/control_flow.md">sources/control_flow.md</a>
-            </aside>
-            
-            <aside class="page_number">
               12/17
             </aside>
           </footer>
@@ -515,16 +516,16 @@
             <header><h1>while you can</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
-<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
-<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="lineno">4</span> <span class="s">&#39;ekans&#39;</span>
-<span class="lineno">5</span> <span class="s">&#39;is&#39;</span>
-<span class="lineno">6</span> <span class="s">&#39;name&#39;</span>
-<span class="lineno">7</span> <span class="s">&#39;my&#39;</span>
-<span class="lineno">8</span> <span class="s">&#39;hello&#39;</span>
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="k">while</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span>     <span class="k">print</span> <span class="n">y</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 </pre></div>
-</section>
+
+<p>ekans</p>
+<p>is</p>
+<p>name</p>
+<p>my</p>
+<p>hello</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -554,19 +555,19 @@
             <header><h1>give them what for</h1></header>
             
             
-            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
-<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">:</span>
-<span class="lineno"> 3</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">x</span>
-<span class="lineno"> 4</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">else</span><span class="p">:</span>
-<span class="lineno"> 5</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">x</span> <span class="o">+</span> <span class="s">&#39; goodbye&#39;</span> <span class="c"># retains variables and scope of for loop</span>
-<span class="lineno"> 6</span> <span class="s">&#39;hello&#39;</span>
-<span class="lineno"> 7</span> <span class="s">&#39;my&#39;</span>
-<span class="lineno"> 8</span> <span class="s">&#39;name&#39;</span>
-<span class="lineno"> 9</span> <span class="s">&#39;is&#39;</span>
-<span class="lineno">10</span> <span class="s">&#39;ekans&#39;</span>
-<span class="lineno">11</span> <span class="s">&#39;exans goodbye&#39;</span>
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;hello&#39;</span><span class="p">,</span> <span class="s">&#39;my&#39;</span><span class="p">,</span> <span class="s">&#39;name&#39;</span><span class="p">,</span> <span class="s">&#39;is&#39;</span><span class="p">,</span> <span class="s">&#39;ekans&#39;</span><span class="p">]</span>
+<span class="lineno">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">y</span><span class="p">:</span>
+<span class="lineno">3</span>     <span class="k">print</span> <span class="n">x</span>
+<span class="lineno">4</span> <span class="k">else</span><span class="p">:</span>
+<span class="lineno">5</span>     <span class="k">print</span> <span class="n">x</span> <span class="o">+</span> <span class="s">&#39; goodbye&#39;</span> <span class="c"># retains variables and scope of for loop</span>
 </pre></div>
-</section>
+
+<p>hello</p>
+<p>my</p>
+<p>name</p>
+<p>is</p>
+<p>ekans</p>
+<p>exans goodbye</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -752,13 +753,13 @@
       
       
       <tr id="toc-row-11">
-        <th><a href="#slide11">pass the buck</a></th>
+        <th><a href="#slide11">next time around</a></th>
         <td><a href="#slide11">11</a></td>
       </tr>
       
       
       <tr id="toc-row-12">
-        <th><a href="#slide12">next time around</a></th>
+        <th><a href="#slide12">pass the buck</a></th>
         <td><a href="#slide12">12</a></td>
       </tr>
       
