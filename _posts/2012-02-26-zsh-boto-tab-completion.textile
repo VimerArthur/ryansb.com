@@ -10,7 +10,7 @@ I use zsh as my main shell, especially for the revision control information in m
 
 I also use S3 and elbadmin on a more or less daily basis, and often find myself having to run different versions of those commands a bunch of times to drill down to the options I actually want. There's no built-in way to tab-complete things like S3 buckets or Elastic Load Balancers, so I started work on one.
 
-Currently, it supports @elbadmin@ completely (except for tab-completing listeners) and @lss3@ to the extent that it completes available buckets, but not keys within those buckets.
+Currently, it supports @elbadmin@ completely (except for tab-completing listeners) and @lss3@ to the extent that it completes available buckets, but not keys within those buckets. It's available on "Github.":https://github.com/ryansb/zsh-boto
 
 There are pre-reqs to get tab-completion working, but they're very minimal. First, you need to have boto and zsh both installed.
 
