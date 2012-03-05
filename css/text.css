@@ -1,4 +1,4 @@
-body{font:13px/1.5 Helvetica,Arial,'Liberation Sans',FreeSans,sans-serif;}
+body{font:13px/1.5 Verdana, helvetica, arial, clean, sans-serif;}
 a:focus{outline:1px dotted invert;}
 hr{
   border:0 #ccc solid;
@@ -14,5 +14,4 @@ h5{font-size:17px;}
 h6{font-size:15px;}
 ol{list-style:decimal;}
 ul{list-style:square;}
-li{margin-left:30px;}
-p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px;}
+p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:10px;}

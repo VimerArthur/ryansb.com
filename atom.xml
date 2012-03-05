@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Ryan S. Brown</title>
- <link href="http://ryansb.github.com/atom.xml" rel="self"/>
- <link href="http://ryansb.github.com/"/>
+ <link href="http://ryansb.com/atom.xml" rel="self"/>
+ <link href="http://ryansb.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://ryansb.github.com/</id>
+ <id>http://ryansb.com/</id>
  <author>
    <name>Ryan S. Brown</name>
    <email>ryansb@csh.rit.edu</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://ryansb.github.com{{ post.url }}"/>
+   <link href="http://ryansb.com{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://gitready.com{{ post.id }}</id>
+   <id>http://ryansb.com{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

@@ -1,8 +1,16 @@
+@baseFontFamily: Verdana, helvetica, arial, clean, sans-serif;
+@bg-default: #222;
+@bare-link: #AED180;
+@bare-link-hover: #FFE3A3;
+@text-link-color: #3A000D;
+@text-link-bgcolor: @bare-link;
+@header: #92BF6F;
+@white: #000;
+
 body {
-  background-color: white;
-  font: 13.34px Verdana, helvetica, arial, clean, sans-serif;
+  background: @bg-default;
+  font: 13.34px @baseFontFamily;
   font-size: small;
-  background: #222;
 }
 
 iframe {
@@ -10,21 +18,19 @@ iframe {
 }
 
 a {
-  color: #8A003D;
+  color: @text-link-color;
   text-decoration: none;
 }
 
 .content p a, .content ul a {
-  color: #000;
-  background: #AED180;
+  color: @text-link-color;
+  background: @text-link-bgcolor;
 }
 
 .content p a:hover, .content ul a:hover {
-  color: #fff;
-  background: #000;
-}
-
-a:visited {
+  background: @text-link-bgcolor - #111;
+  color: @text-link-color;
+  text-decoration: none;
 }
 
 p {
@@ -34,6 +40,7 @@ p {
 }
 
 #date { text-align: center; color: #333; font-size: 80%;}
+
 #post img { padding: 10px; border: 2px solid #aaa; background: #eee; }
 #feedburner {
   position: fixed;
@@ -41,9 +48,6 @@ p {
   left: 0;
   margin: 0;
 }
-
-#counter { margin-left: 425px; }
-
 
 /*****************************************************************************/
 /*
@@ -64,8 +68,15 @@ p {
   margin-bottom: 5px;
 }
 
-.recent a{ color: #AED180; } 
-.recent a:hover { color: #FFE3A3; text-decoration: underline; background: none; }
+.recent a {
+  color: @bare-link;
+}
+
+.recent a:hover {
+  color: @bare-link-hover;
+  text-decoration: underline;
+  background: none;
+}
 
 ul.posts span {
   font-family: Monaco, "Courier New", monospace;
@@ -92,13 +103,16 @@ ul.posts span {
 }
 
 .title h1 a {
-  color: #92BF6F;
+  color: @header;
   font-weight: bold;
   margin-bottom: 20px;
   font-size: 50px;
   font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;
 }
 
+.title h1 a:hover {
+  text-decoration: none;
+}
 .info div {
   text-align: right;
 }
@@ -133,18 +147,19 @@ ul.posts span {
   text-align: center;
   font-size: 80%;
   display: block;
-  padding: 3px;
-  background: #FFE3A3;
+  padding: .25em;
+  background: @bare-link-hover;
   border-bottom: #FFF;
-  border-width: 3px;
-  margin-bottom: 3px;
+  border-width: .25em;
+  margin-bottom: .25em;
+  text-decoration: none;
 }
 
 .links h3 { text-align: center; }
 
 .links a:hover
 {
-  background: #AED180;
+  background: @bare-link;
 }
 
 h2{
@@ -169,13 +184,13 @@ h3{
 #post h3{ margin-left: 5px; }
 
 
-#green { color: #99FF80; }	
+#green { color: #99FF80; }
 #red { color: #BF3030; }
 #yellow { color: #B3B300; }
 #blue { color: #809FFF; }
-#purple { 
+#purple {
   text-align: center;
-  padding: 0 0 5px; 
+  padding: 0 0 5px;
   color: #FF80FF;
 }
 
@@ -196,7 +211,7 @@ h3{
 }
 
 .footer a {
-  color: #AED180;
+  color: @bare-link;
   font-size: 16px;
   display:inline-block;
   padding: 10px;
@@ -264,16 +279,15 @@ pre {
 #post ul, #post ol {
   list-style-type: disc;
   text-align: left;
-  margin-left: 40px;
 }
 
 #post li { margin-bottom: 3px; }
 
 
 #related {
-  margin-top: 2em;
+  padding-top: 2em;
 }
 
 #related h2 {
-  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
