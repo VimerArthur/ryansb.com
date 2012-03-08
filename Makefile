@@ -1,19 +1,20 @@
 update:
-	lessc --compress bootstrap/less/bootstrap.less > css/bootstrap.css
-	lessc --compress css/screen.less > css/screen.css
+	lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css
+	lessc _includes/screen.less > _includes/screen.css
 	jekyll --pygments
+	sudo rm -rf /var/www/html/*
 	sudo cp -r _site/* /var/www/html
 
 compile:
-	lessc --compress bootstrap/less/bootstrap.less > css/bootstrap.css
-	lessc --compress css/screen.less > css/screen.css
+	lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css
+	lessc _includes/screen.less > _includes/screen.css
 	jekyll --pygments
 
 devel:
-	lessc --compress bootstrap/less/bootstrap.less > css/bootstrap.css
-	lessc --compress css/screen.less > css/screen.css
+	lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css
+	lessc _includes/screen.less > _includes/screen.css
 	jekyll --pygments --auto --server
 
 less:
-	lessc --compress bootstrap/less/bootstrap.less > css/bootstrap.css
-	lessc --compress css/screen.less > css/screen.css
+	lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css
+	lessc _includes/screen.less > _includes/screen.css
