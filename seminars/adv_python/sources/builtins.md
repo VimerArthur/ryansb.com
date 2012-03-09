@@ -3,7 +3,7 @@
 Imported anytime you run Python, has tons of handy stuff
 
 * errors ( ImportError, AttributeError, ZeroDivisionError )
-* types we love ( dict, int, str )
+* types we love ( dict, set, int, str )
 * handy constants ( True, False, None )
 
 Also some handy functions
@@ -24,4 +24,13 @@ Also some handy functions
 
 #Builtins Continued
 
-Also brings in builtin functions
+Other builtin stuff
+
+* next
+* filter
+* map
+* reduce
+* pow
+* ord
+* hasattr
+* cmp

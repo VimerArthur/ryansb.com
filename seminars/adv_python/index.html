@@ -1283,7 +1283,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              1/16
+              1/20
             </aside>
           </footer>
         </div>
@@ -1316,7 +1316,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              2/16
+              2/20
             </aside>
           </footer>
         </div>
@@ -1356,7 +1356,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              3/16
+              3/20
             </aside>
           </footer>
         </div>
@@ -1397,7 +1397,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              4/16
+              4/20
             </aside>
           </footer>
         </div>
@@ -1427,7 +1427,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              5/16
+              5/20
             </aside>
           </footer>
         </div>
@@ -1472,7 +1472,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              6/16
+              6/20
             </aside>
           </footer>
         </div>
@@ -1516,7 +1516,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              7/16
+              7/20
             </aside>
           </footer>
         </div>
@@ -1561,7 +1561,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              8/16
+              8/20
             </aside>
           </footer>
         </div>
@@ -1604,7 +1604,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              9/16
+              9/20
             </aside>
           </footer>
         </div>
@@ -1653,7 +1653,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              10/16
+              10/20
             </aside>
           </footer>
         </div>
@@ -1705,7 +1705,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              11/16
+              11/20
             </aside>
           </footer>
         </div>
@@ -1753,7 +1753,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              12/16
+              12/20
             </aside>
           </footer>
         </div>
@@ -1770,7 +1770,7 @@ aside {
             <section><p>Imported anytime you run Python, has tons of handy stuff</p>
 <ul>
 <li>errors ( ImportError, AttributeError, ZeroDivisionError )</li>
-<li>types we love ( dict, int, str )</li>
+<li>types we love ( dict, set, int, str )</li>
 <li>handy constants ( True, False, None )</li>
 </ul>
 <p>Also some handy functions</p>
@@ -1801,7 +1801,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              13/16
+              13/20
             </aside>
           </footer>
         </div>
@@ -1815,7 +1815,17 @@ aside {
             <header><h1>Builtins Continued</h1></header>
             
             
-            <section><p>Also brings in builtin functions</p></section>
+            <section><p>Other builtin stuff</p>
+<ul>
+<li>next</li>
+<li>filter</li>
+<li>map</li>
+<li>reduce</li>
+<li>pow</li>
+<li>ord</li>
+<li>hasattr</li>
+<li>cmp</li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -1831,7 +1841,185 @@ aside {
             </aside>
             
             <aside class="page_number">
-              14/16
+              14/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/magic_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Do You Believe in Magic?</h1></header>
+            
+            
+            <section><h2>Creation</h2>
+<ul>
+<li>__init__</li>
+<li>__new__</li>
+</ul>
+<h2>Equality</h2>
+<ul>
+<li>__eq__ #equal to</li>
+<li>__lt__ #less than</li>
+<li>__le__ #less than or equal to</li>
+<li>__gt__ #greater than</li>
+<li>__ge__ #greater than or equal to</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/magic_methods.md">sources/magic_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/magic_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Magic Methods Continued</h1></header>
+            
+            
+            <section><h2>Class/Object</h2>
+<ul>
+<li>__module__ #the module an object is a part of</li>
+<li>__class__ #the fully qualified class of an object</li>
+<li>__base__ #base class of the object</li>
+<li>__bases__ #a list of base classes</li>
+<li>__subclasscheck__ #pass in an object to see if it is a subclass of this one</li>
+<li>__subclasses__ #find everything that is a subclass of this one</li>
+<li>__instancecheck__ #pass in an object to see if it is an of this class</li>
+<li>__call__ #shorthand of this is ()</li>
+<li>__dict__ #returns a dict of (by default) all the attributes of an instance</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/magic_methods.md">sources/magic_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/magic_methods.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Magic Methods, Still</h1></header>
+            
+            
+            <section><h2>Attributes</h2>
+<ul>
+<li>__getattribute__</li>
+<li>__setattr__</li>
+<li>__delattr__</li>
+</ul>
+<h2>Coercion</h2>
+<ul>
+<li>__repr__ #return a representation of an object &lt;object at 0x7f4e3b92c270></li>
+<li>__str__ #stringify the object</li>
+<li>__format__ #default object formatter</li>
+<li>__name__ #string of the name of the object</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/magic_methods.md">sources/magic_methods.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/20
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/type_coercion.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Type Coercion</h1></header>
+            
+            
+            <section><h2>Coercion vs. Casting</h2>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="mf">2.0</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="c">#cast</span>
+<span class="lineno">2</span> <span class="mf">1.0</span> <span class="o">+</span> <span class="mi">2</span>  <span class="c">#coerce</span>
+</pre></div>
+
+<p>Python tries to do what you mean</p>
+<p>Uses functions like object.<strong>str</strong>(), or object.<strong>int</strong>() depending on operator</p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="c">#str + int</span>
+<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&quot;hello&quot;</span> <span class="o">+</span> <span class="mi">8</span>
+<span class="lineno"> 3</span> <span class="ne">TypeError</span><span class="p">:</span> <span class="n">cannot</span> <span class="n">concatenate</span> <span class="s">&#39;str&#39;</span> <span class="ow">and</span> <span class="s">&#39;int&#39;</span> <span class="n">objects</span>
+<span class="lineno"> 4</span> <span class="c">#str + str</span>
+<span class="lineno"> 5</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&quot;hi&quot;</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="s">&quot;there&quot;</span>
+<span class="lineno"> 6</span> <span class="s">&#39;hi there&#39;</span>
+<span class="lineno"> 7</span> <span class="c">#str + int</span>
+<span class="lineno"> 8</span> <span class="o">&gt;&gt;&gt;</span> <span class="s">&quot;hi&quot;</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="lineno"> 9</span> <span class="s">&quot;hi&quot;</span>
+<span class="lineno">10</span> <span class="c">#float + int</span>
+<span class="lineno">11</span> <span class="o">&gt;&gt;&gt;</span> <span class="mf">9.9</span> <span class="o">+</span> <span class="mi">9</span>
+<span class="lineno">12</span> <span class="mf">18.9</span>
+<span class="lineno">13</span> <span class="c">#tuple + tuple</span>
+<span class="lineno">14</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="p">)</span>
+<span class="lineno">15</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/type_coercion.md">sources/type_coercion.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/20
             </aside>
           </footer>
         </div>
@@ -1853,7 +2041,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1875,7 +2063,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1897,7 +2085,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1919,7 +2107,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1941,7 +2129,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1963,7 +2151,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -1985,51 +2173,7 @@ aside {
           <footer>
             
             <aside class="page_number">
-              /16
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source:  -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="page_number">
-              /16
-            </aside>
-          </footer>
-        </div>
-      </div>
-      
-      <!-- slide source:  -->
-      <div class="slide-wrapper">
-        <div class="slide">
-          <div class="inner">
-            
-            
-          </div>
-          <div class="presenter_notes">
-            <header><h1>Presenter Notes</h1></header>
-            <section>
-            
-            </section>
-          </div>
-          <footer>
-            
-            <aside class="page_number">
-              /16
+              /20
             </aside>
           </footer>
         </div>
@@ -2057,7 +2201,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              15/16
+              19/20
             </aside>
           </footer>
         </div>
@@ -2092,7 +2236,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              16/16
+              20/20
             </aside>
           </footer>
         </div>
@@ -2191,14 +2335,38 @@ aside {
       
       
       <tr id="toc-row-15">
-        <th><a href="#slide15">???</a></th>
+        <th><a href="#slide15">Do You Believe in Magic?</a></th>
         <td><a href="#slide15">15</a></td>
       </tr>
       
       
       <tr id="toc-row-16">
-        <th><a href="#slide16">Resources</a></th>
+        <th><a href="#slide16">Magic Methods Continued</a></th>
         <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Magic Methods, Still</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Type Coercion</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-19">
+        <th><a href="#slide19">???</a></th>
+        <td><a href="#slide19">19</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-20">
+        <th><a href="#slide20">Resources</a></th>
+        <td><a href="#slide20">20</a></td>
       </tr>
       
       
