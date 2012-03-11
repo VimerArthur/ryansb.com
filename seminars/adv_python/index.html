@@ -1283,7 +1283,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              1/20
+              1/36
             </aside>
           </footer>
         </div>
@@ -1316,7 +1316,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              2/20
+              2/36
             </aside>
           </footer>
         </div>
@@ -1356,7 +1356,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              3/20
+              3/36
             </aside>
           </footer>
         </div>
@@ -1397,7 +1397,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              4/20
+              4/36
             </aside>
           </footer>
         </div>
@@ -1427,7 +1427,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              5/20
+              5/36
             </aside>
           </footer>
         </div>
@@ -1472,7 +1472,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              6/20
+              6/36
             </aside>
           </footer>
         </div>
@@ -1516,7 +1516,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              7/20
+              7/36
             </aside>
           </footer>
         </div>
@@ -1561,7 +1561,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              8/20
+              8/36
             </aside>
           </footer>
         </div>
@@ -1604,7 +1604,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              9/20
+              9/36
             </aside>
           </footer>
         </div>
@@ -1653,7 +1653,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              10/20
+              10/36
             </aside>
           </footer>
         </div>
@@ -1705,7 +1705,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              11/20
+              11/36
             </aside>
           </footer>
         </div>
@@ -1753,7 +1753,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              12/20
+              12/36
             </aside>
           </footer>
         </div>
@@ -1801,7 +1801,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              13/20
+              13/36
             </aside>
           </footer>
         </div>
@@ -1841,7 +1841,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              14/20
+              14/36
             </aside>
           </footer>
         </div>
@@ -1883,7 +1883,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              15/20
+              15/36
             </aside>
           </footer>
         </div>
@@ -1924,7 +1924,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              16/20
+              16/36
             </aside>
           </footer>
         </div>
@@ -1966,7 +1966,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              17/20
+              17/36
             </aside>
           </footer>
         </div>
@@ -2019,16 +2019,433 @@ aside {
             </aside>
             
             <aside class="page_number">
-              18/20
+              18/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/iterators_iterables.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Iterators and Iterables</h1></header>
+            
+            
+            <section><p>Tons of things are iterable!</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="p">[</span><span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="s">&quot;there&quot;</span><span class="p">,</span> <span class="s">&quot;snakecharmer&quot;</span><span class="p">]:</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span>     <span class="c">#iterate over words in a list</span>
+<span class="lineno">3</span> <span class="o">&gt;&gt;&gt;</span>     <span class="k">print</span> <span class="n">word</span>
+<span class="lineno">4</span> <span class="n">hello</span>
+<span class="lineno">5</span> <span class="n">there</span>
+<span class="lineno">6</span> <span class="n">snakecharmer</span>
+</pre></div>
+
+<p>Iterables must:</p>
+<ul>
+<li>Make it possible to traverse a list</li>
+<li>Guarantee (eventual) reachability of all values</li>
+<li>Allow the use the object.next() operator to reach the next value</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/iterators_iterables.md">sources/iterators_iterables.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              19/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/iterators_iterables.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Itertools</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="lineno"> 1</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="lineno"> 2</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">,</span> <span class="s">&#39;d&#39;</span><span class="p">]</span>
+<span class="lineno"> 3</span> <span class="c"># roughly equivalent to a.extend(b), but does not store the result in a</span>
+<span class="lineno"> 4</span> <span class="n">itertoolsmodule</span><span class="o">.</span><span class="n">chain</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> 
+<span class="lineno"> 5</span> <span class="c"># all combinations of length 3 of all items in a list.</span>
+<span class="lineno"> 6</span> <span class="n">itertoolsmodule</span><span class="o">.</span><span class="n">combinations</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="lineno"> 7</span> <span class="c"># return elements from a until b is exhausted, then repeat infinitely</span>
+<span class="lineno"> 8</span> <span class="n">itertoolsmodule</span><span class="o">.</span><span class="n">cycle</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="lineno"> 9</span> <span class="c"># just like the builtin &quot;filter&quot; function</span>
+<span class="lineno">10</span> <span class="c"># there&#39;s also ifilterfalse which is the inverse, obviously</span>
+<span class="lineno">11</span> <span class="n">itertoolsmodule</span><span class="o">.</span><span class="n">ifilter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="lineno">12</span> <span class="c"># returns (key, subset) grouped by the value of second_arg(first arg)</span>
+<span class="lineno">13</span> <span class="n">itertoolsmodule</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+<span class="lineno">14</span> <span class="c"># returns three independent iterables of the contents of a</span>
+<span class="lineno">15</span> <span class="n">itertools</span><span class="o">.</span><span class="n">tee</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/iterators_iterables.md">sources/iterators_iterables.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              20/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/generators.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
+            
+            <header><h1>Generators</h1></header>
+            
+            
+            <section><h1>A very special iterable</h1>
+<p>Only creates results when they are asked for</p>
+<p>All thanks to the "yield" keyword</p>
+<p>Preseve their state and will calculate the next result when the .next() method is called</p>
+<p>Use "yield" where you might normally use "return"</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/generators.md">sources/generators.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              21/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/generators.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Generator Examples</h1></header>
+            
+            
+            <section><h1>Primes</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">fib_gen</span><span class="p">();</span>
+<span class="lineno">2</span>     <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="lineno">3</span>     <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="lineno">4</span>     <span class="k">while</span> <span class="bp">True</span><span class="p">;</span>
+<span class="lineno">5</span>         <span class="k">yield</span> <span class="n">a</span>
+<span class="lineno">6</span>         <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+<h1>Usage</h1>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">fibs</span> <span class="o">=</span> <span class="n">fib_gen</span><span class="p">()</span>
+<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> <span class="k">print</span> <span class="n">fibs</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno"> 3</span> <span class="mi">1</span>
+<span class="lineno"> 4</span> <span class="mi">1</span>
+<span class="lineno"> 5</span> <span class="mi">2</span>
+<span class="lineno"> 6</span> <span class="mi">3</span>
+<span class="lineno"> 7</span> <span class="mi">5</span>
+<span class="lineno"> 8</span> <span class="mi">8</span>
+<span class="lineno"> 9</span> <span class="mi">13</span>
+<span class="lineno">10</span> <span class="mi">21</span>
+<span class="lineno">11</span> <span class="mi">34</span>
+<span class="lineno">12</span> <span class="mi">55</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/generators.md">sources/generators.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              22/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/generators.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Generator Examples Continued</h1></header>
+            
+            
+            <section><h1>Walk a Directory</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">filename_generator</span><span class="p">(</span><span class="n">dirname</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="n">subdirlist</span> <span class="o">=</span> <span class="p">[</span><span class="n">dirname</span><span class="p">]</span>
+<span class="lineno">3</span>     <span class="k">while</span> <span class="n">subdirlist</span><span class="p">:</span>
+<span class="lineno">4</span>         <span class="n">dirname</span> <span class="o">=</span> <span class="n">subdirlist</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="lineno">5</span>         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dirname</span><span class="p">):</span>
+<span class="lineno">6</span>             <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="n">item</span><span class="p">)):</span>
+<span class="lineno">7</span>                 <span class="k">yield</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+<span class="lineno">8</span>             <span class="k">else</span><span class="p">:</span>
+<span class="lineno">9</span>                 <span class="n">subdirlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">,</span> <span class="n">item</span><span class="p">))</span>
+</pre></div>
+
+<h1>Usage</h1>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">files</span> <span class="o">=</span> <span class="n">filename_generator</span><span class="p">(</span><span class="s">&#39;/home&#39;</span><span class="p">)</span>
+<span class="lineno">2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">files</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno">3</span> <span class="s">&quot;afile.txt&quot;</span>
+<span class="lineno">4</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> <span class="n">files</span><span class="o">.</span><span class="n">next</span><span class="p">()</span> <span class="c"># Eventually generators can be exhausted</span>
+<span class="lineno">5</span> <span class="ne">StopIteration</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/generators.md">sources/generators.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              23/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/generators.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>Controlling Generators</h1></header>
+            
+            
+            <section><div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">counter</span> <span class="p">(</span><span class="n">maximum</span><span class="p">):</span>
+<span class="lineno">2</span>     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="lineno">3</span>     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">maximum</span><span class="p">:</span>
+<span class="lineno">4</span>         <span class="n">val</span> <span class="o">=</span> <span class="p">(</span><span class="k">yield</span> <span class="n">i</span><span class="p">)</span>
+<span class="lineno">5</span>         <span class="c"># If value provided, change counter</span>
+<span class="lineno">6</span>         <span class="k">if</span> <span class="n">val</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span> <span class="n">i</span> <span class="o">=</span> <span class="n">val</span>
+<span class="lineno">7</span>         <span class="k">else</span><span class="p">:</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+<p>You can tell a generator to continue as if the "val" in gen.send(val) was its last yield</p>
+<div class="highlight"><pre><span class="lineno"> 1</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">it</span> <span class="o">=</span> <span class="n">counter</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="lineno"> 2</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">(),</span> <span class="s">&quot; | &quot;</span><span class="p">,</span> <span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno"> 3</span> <span class="mi">0</span> <span class="o">|</span> <span class="mi">1</span>
+<span class="lineno"> 4</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">it</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="lineno"> 5</span> <span class="mi">8</span>
+<span class="lineno"> 6</span> <span class="o">&gt;&gt;&gt;</span> <span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno"> 7</span> <span class="mi">9</span>
+<span class="lineno"> 8</span> <span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno"> 9</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<span class="lineno">10</span> <span class="n">File</span> <span class="s">&quot;t.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">15</span>
+<span class="lineno">11</span>     <span class="k">print</span> <span class="n">it</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+<span class="lineno">12</span> <span class="ne">StopIteration</span>
+</pre></div>
+</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/generators.md">sources/generators.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              24/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/new_style_classes.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>New-Style Classes</h1></header>
+            
+            
+            <section><h1>New-style classes are intended to unify classes and types</h1>
+<p>(also enable metaclasses, but let's not go there, yet)</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">class</span> <span class="nc">OldStyleClass</span><span class="p">():</span>
+<span class="lineno">2</span>     <span class="k">pass</span>
+<span class="lineno">3</span> <span class="k">class</span> <span class="nc">NewStyleClass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="lineno">4</span>     <span class="c"># new-style classes all inherit from object, directly...</span>
+<span class="lineno">5</span>     <span class="k">pass</span>
+<span class="lineno">6</span> <span class="k">class</span> <span class="nc">ChildNewStyleClass</span><span class="p">(</span><span class="n">NewStyleClass</span><span class="p">):</span>
+<span class="lineno">7</span>     <span class="c"># ...or indirectly</span>
+<span class="lineno">8</span>     <span class="k">pass</span>
+</pre></div>
+
+<h1>Method resolution order</h1>
+<ul>
+<li>multiple inheritance</li>
+<li>
+<p>methods are resolved in order of inheritance declaration</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span> <span class="k">pass</span>
+<span class="lineno">2</span> <span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span> <span class="k">pass</span>
+<span class="lineno">3</span> <span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">):</span> <span class="k">pass</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/new_style_classes.md">sources/new_style_classes.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              25/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/new_style_classes.md -->
+      <div class="slide-wrapper">
+        <div class="slide has_code">
+          <div class="inner">
+            
+            <header><h1>New-Style Classes Continued</h1></header>
+            
+            
+            <section><h1>the super() method</h1>
+<ul>
+<li>less unnecessary verbosity</li>
+<li>
+<p>pretty standard OOP concept</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># assume that A, B, and Call have a method &quot;m&quot;</span>
+<span class="lineno">2</span> <span class="c"># and inherit like this: A -&gt; B -&gt; C</span>
+<span class="lineno">3</span> <span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">C</span><span class="p">):</span>
+<span class="lineno">4</span>     <span class="k">def</span> <span class="nf">m</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dothings</span><span class="p">;</span> <span class="n">A</span><span class="o">.</span><span class="n">m</span><span class="p">(),</span> <span class="n">B</span><span class="o">.</span><span class="n">m</span><span class="p">(),</span> <span class="n">C</span><span class="o">.</span><span class="n">m</span><span class="p">()</span>
+<span class="lineno">5</span>     <span class="c">#but what if the heirarchy changes?</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="c">#if we used super</span>
+<span class="lineno">8</span> <span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">C</span><span class="p">):</span>
+<span class="lineno">9</span>     <span class="k">def</span> <span class="nf">m</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dothings</span><span class="p">;</span> <span class="nb">super</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span>
+</pre></div>
+
+</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/new_style_classes.md">sources/new_style_classes.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              26/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/new_style_classes.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>New-Style Classes Continued</h1></header>
+            
+            
+            <section><h1>the <strong>new</strong> initialization step</h1>
+<ul>
+<li>runs before <strong>init</strong></li>
+<li>used by a lot of the builtin types like str and int</li>
+<li>needed if you want to override the constructor of an immutable type</li>
+<li>first argument must be a class</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="sources/new_style_classes.md">sources/new_style_classes.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              27/36
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: sources/decorators.md -->
+      <div class="slide-wrapper">
+        <div class="slide">
+          <div class="inner">
+            
+            <header><h1>Decorators</h1></header>
             
             
           </div>
@@ -2040,17 +2457,23 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/decorators.md">sources/decorators.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              28/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/metaclasses.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
+            
+            <header><h1>Metaclasses</h1></header>
             
             
           </div>
@@ -2062,18 +2485,37 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/metaclasses.md">sources/metaclasses.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              29/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/unittest.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
+            <header><h1>Unit Testing: Standard</h1></header>
+            
+            
+            <section><h1>unittest</h1>
+<p>Included in the standard library</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="kn">import</span> <span class="nn">unittest</span>
+<span class="lineno">2</span> 
+<span class="lineno">3</span> <span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="lineno">4</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="lineno">5</span> 
+<span class="lineno">6</span> <span class="k">class</span> <span class="nc">MyTest</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">);</span>
+<span class="lineno">7</span>     <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">);</span>
+<span class="lineno">8</span>         <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">fun</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -2084,18 +2526,37 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/unittest.md">sources/unittest.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              30/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/unittest.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
+            <header><h1>Unit Testing: Simpler</h1></header>
+            
+            
+            <section><h1>pytest</h1>
+<p>Not in standard library :(
+pip install pytest</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># content of test_sample.py</span>
+<span class="lineno">2</span> <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="lineno">3</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span> <span class="k">def</span> <span class="nf">test_answer</span><span class="p">();</span>
+<span class="lineno">6</span>     <span class="k">assert</span> <span class="n">func</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+</pre></div>
+
+<p>Then run "py.test"</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -2106,18 +2567,34 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/unittest.md">sources/unittest.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              31/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/unittest.md -->
       <div class="slide-wrapper">
         <div class="slide">
           <div class="inner">
             
+            <header><h1>Unit Testing: Awesome</h1></header>
+            
+            
+            <section><h1>nose</h1>
+<p>Extends unittest for testing bliss</p>
+<p>Fancy automatic test discovery</p>
+<p>Tons of plugins for stuff like:</p>
+<ul>
+<li>xUnit-compatible test output</li>
+<li>coverage metrics</li>
+<li>test selection (e.g. only running a subset of tests)</li>
+</ul></section>
             
           </div>
           <div class="presenter_notes">
@@ -2128,18 +2605,43 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/unittest.md">sources/unittest.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              32/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/unittest.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
+            <header><h1>Nose Continued</h1></header>
+            
+            
+            <section><p>Not in standard library :(
+pip install nose</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="nb">cd </span>path/to/project
+<span class="lineno">2</span> nosetests
+</pre></div>
+
+<p>Supports unittest.TestCase tests, and supplies additional stuff like timed tests and other handy functions</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">setup_func</span><span class="p">();</span>
+<span class="lineno">2</span>     <span class="s">&quot;set up test fixtures&quot;</span>
+<span class="lineno">3</span> 
+<span class="lineno">4</span> <span class="k">def</span> <span class="nf">teardown_func</span><span class="p">();</span>
+<span class="lineno">5</span>     <span class="s">&quot;tear down test fixtures&quot;</span>
+<span class="lineno">6</span> 
+<span class="lineno">7</span> <span class="nd">@with_setup</span><span class="p">(</span><span class="n">setup_func</span><span class="p">,</span> <span class="n">teardown_func</span><span class="p">)</span> <span class="c">#Hey, remember decorators?</span>
+<span class="lineno">8</span> <span class="k">def</span> <span class="nf">test</span><span class="p">();</span>
+<span class="lineno">9</span>     <span class="s">&quot;test ...&quot;</span>
+</pre></div>
+</section>
             
           </div>
           <div class="presenter_notes">
@@ -2150,18 +2652,36 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/unittest.md">sources/unittest.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              33/36
             </aside>
           </footer>
         </div>
       </div>
       
-      <!-- slide source:  -->
+      <!-- slide source: sources/unittest.md -->
       <div class="slide-wrapper">
-        <div class="slide">
+        <div class="slide has_code">
           <div class="inner">
             
+            <header><h1>Nose Continued</h1></header>
+            
+            
+            <section><p>You can even use generators to write tests</p>
+<div class="highlight"><pre><span class="lineno">1</span> <span class="k">def</span> <span class="nf">test_generator</span><span class="p">();</span>
+<span class="lineno">2</span>     <span class="c"># ...</span>
+<span class="lineno">3</span>     <span class="k">yield</span> <span class="n">func</span><span class="p">,</span> <span class="n">arg</span><span class="p">,</span> <span class="n">arg</span> <span class="c"># ...</span>
+<span class="lineno">4</span> 
+<span class="lineno">5</span> <span class="nd">@with_setup</span><span class="p">(</span><span class="n">setup_func</span><span class="p">,</span> <span class="n">teardown_func</span><span class="p">)</span>
+<span class="lineno">6</span> <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">arg</span><span class="p">);</span>
+<span class="lineno">7</span>     <span class="k">assert</span> <span class="n">something_about</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+</pre></div>
+
+<p>Setup and teardown methods are run before and after each generated test case</p></section>
             
           </div>
           <div class="presenter_notes">
@@ -2172,8 +2692,12 @@ aside {
           </div>
           <footer>
             
+            <aside class="source">
+              Source: <a href="sources/unittest.md">sources/unittest.md</a>
+            </aside>
+            
             <aside class="page_number">
-              /20
+              34/36
             </aside>
           </footer>
         </div>
@@ -2201,7 +2725,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              19/20
+              35/36
             </aside>
           </footer>
         </div>
@@ -2217,6 +2741,7 @@ aside {
             
             <section><ul>
 <li><a href="http://www.python.org/doc/">python.org</a></li>
+<li><a href="http://docs.python-guide.org/en/latest/index.html">Hitchikers Guide to Python</a></li>
 <li><a href="http://www.ibm.com/developerworks/opensource/library/os-python8/?ca=dgr-l...">IBM Python Tutorial</a></li>
 <li><a href="http://www.awaretek.com/tutorials.html">awaretek.com</a></li>
 <li><a href="http://devblog.bu.mp/generators-and-back-again">devblog.bu.mp</a></li>
@@ -2236,7 +2761,7 @@ aside {
             </aside>
             
             <aside class="page_number">
-              20/20
+              36/36
             </aside>
           </footer>
         </div>
@@ -2359,14 +2884,110 @@ aside {
       
       
       <tr id="toc-row-19">
-        <th><a href="#slide19">???</a></th>
+        <th><a href="#slide19">Iterators and Iterables</a></th>
         <td><a href="#slide19">19</a></td>
       </tr>
       
       
       <tr id="toc-row-20">
-        <th><a href="#slide20">Resources</a></th>
+        <th><a href="#slide20">Itertools</a></th>
         <td><a href="#slide20">20</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-21">
+        <th><a href="#slide21">Generators</a></th>
+        <td><a href="#slide21">21</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-22">
+        <th><a href="#slide22">Generator Examples</a></th>
+        <td><a href="#slide22">22</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-23">
+        <th><a href="#slide23">Generator Examples Continued</a></th>
+        <td><a href="#slide23">23</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-24">
+        <th><a href="#slide24">Controlling Generators</a></th>
+        <td><a href="#slide24">24</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-25">
+        <th><a href="#slide25">New-Style Classes</a></th>
+        <td><a href="#slide25">25</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-26">
+        <th><a href="#slide26">New-Style Classes Continued</a></th>
+        <td><a href="#slide26">26</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-27">
+        <th><a href="#slide27">New-Style Classes Continued</a></th>
+        <td><a href="#slide27">27</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-28">
+        <th><a href="#slide28">Decorators</a></th>
+        <td><a href="#slide28">28</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-29">
+        <th><a href="#slide29">Metaclasses</a></th>
+        <td><a href="#slide29">29</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-30">
+        <th><a href="#slide30">Unit Testing: Standard</a></th>
+        <td><a href="#slide30">30</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-31">
+        <th><a href="#slide31">Unit Testing: Simpler</a></th>
+        <td><a href="#slide31">31</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-32">
+        <th><a href="#slide32">Unit Testing: Awesome</a></th>
+        <td><a href="#slide32">32</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-33">
+        <th><a href="#slide33">Nose Continued</a></th>
+        <td><a href="#slide33">33</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-34">
+        <th><a href="#slide34">Nose Continued</a></th>
+        <td><a href="#slide34">34</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-35">
+        <th><a href="#slide35">???</a></th>
+        <td><a href="#slide35">35</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-36">
+        <th><a href="#slide36">Resources</a></th>
+        <td><a href="#slide36">36</a></td>
       </tr>
       
       
