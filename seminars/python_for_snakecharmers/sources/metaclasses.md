@@ -103,3 +103,19 @@ type, or anything that subclasses it
 	print y.Z
 	# y.z will give an AttributeError, since y.z was turned into y.Z
 	# by our metaclass
+
+---
+
+# But Why?
+
+Metaclasses are deeper magic than 99% of users should ever worry about. If you wonder whether you need them, you don't (the people who actually need them know with certainty that they need them, and don't need an explanation about why). -- Tim Peters, Python Guru
+
+ORM's like Django use metaclasses all the time
+
+# But odds are you don't need them
+
+## 99% of the time, you don't need class alteration
+
+## 99% of the time you DO need class alteration, you can use decorators or monkey patching
+
+# But for that 0.01% of the time, metaclasses are awesome
