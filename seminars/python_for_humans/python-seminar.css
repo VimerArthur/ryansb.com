@@ -1,5 +1,5 @@
-@import url(js/projection.css); /* required to make the slide show run at all */
-@import url(js/pygment.css); /* required for the fancy syntax highlighting */
+@import url(resources/projection.css); /* required to make the slide show run at all */
+@import url(resources/pygment.css); /* required for the fancy syntax highlighting */
 
 html, body {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 

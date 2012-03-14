@@ -1,4 +1,4 @@
-@import url(js/projection.css); /* required to make the slide show run at all */
+@import url(resources/projection.css); /* required to make the slide show run at all */
 
 html, body {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
