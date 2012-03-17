@@ -2423,8 +2423,12 @@ aside {
 </pre></div>
 
 <p>it's trivial to pull in the remotes of other collaborators</p>
-<div class="highlight"><pre><span class="lineno">1</span> <span class="nv">$ </span>git checkout --track -b bacon rick/grill
-<span class="lineno">2</span> <span class="nv">$ </span>git checkout -t bacon rick/grill
+<div class="highlight"><pre><span class="lineno">1</span> <span class="c"># checkout the branch &quot;grill&quot; from rick (a remote) and call it &quot;bacon&quot;</span>
+<span class="lineno">2</span> <span class="nv">$ </span>git checkout --track -b bacon rick/grill
+<span class="lineno">3</span> <span class="c"># check out the same branch, but just call it grill</span>
+<span class="lineno">4</span> <span class="nv">$ </span>git checkout -t rick/grill
+<span class="lineno">5</span> <span class="c"># a common one you&#39;ll use is this:</span>
+<span class="lineno">6</span> <span class="nv">$ </span>git checkout -t origin/feature
 </pre></div>
 
 <p>to display all local branches</p>
