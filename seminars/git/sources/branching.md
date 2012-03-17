@@ -71,8 +71,12 @@ push one of your branches up to a remote
 it's trivial to pull in the remotes of other collaborators
 
 	!bash
+	# checkout the branch "grill" from rick (a remote) and call it "bacon"
 	$ git checkout --track -b bacon rick/grill
-	$ git checkout -t bacon rick/grill
+	# check out the same branch, but just call it grill
+	$ git checkout -t rick/grill
+	# a common one you'll use is this:
+	$ git checkout -t origin/feature
 
 to display all local branches
 
