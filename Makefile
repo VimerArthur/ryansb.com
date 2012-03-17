@@ -1,4 +1,5 @@
 update:
+	git pull
 	lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css
 	lessc _includes/screen.less > _includes/screen.css
 	jekyll --pygments
