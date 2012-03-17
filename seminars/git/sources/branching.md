@@ -10,6 +10,19 @@ branching
 * conveneint ways to separate tasks and features
 
 ---
+
+# why it's hot
+
+* create a branch to try out an idea, commit a few times, switch back to where you branched from, work there a while, returning to your experiment at your leisure
+
+* have a branch that only ever contains production code, along with separate development and feature branches
+
+* delete feature branches when they are merged into the master branch
+
+* create a branch to experiment in, and delete it if it's not going to work, with nobody knowing it ever existed
+
+
+---
 # starting with branches
 
 ![](img/branching_intro.png)

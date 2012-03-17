@@ -75,6 +75,7 @@ first, clear your mind
 * Git generally only adds data
 * it's hard to lose things once committed
 * almost always possible to roll back changes
+* other than 'fetch', 'push', and 'pull', nearly everything is local
 
 ---
 
