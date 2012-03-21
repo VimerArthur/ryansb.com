@@ -4,6 +4,7 @@ title: main
 ---
 {% assign first_post = site.posts.first %}
 <div id="post" class="span9 content">
+  <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="">
   <h2><a href="{{ first_post.url }}">{{ first_post.title }}</a></h2>
   <p>{{ first_post.content | truncatehtml: 450 }}</p>
   <a id="more" href="{{ first_post.url }}">Read More &raquo;</a>

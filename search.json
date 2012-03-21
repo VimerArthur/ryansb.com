@@ -1,11 +1,19 @@
 ---
 ---
+{{ site.posts.first | json }}
+
+
+
+
+
+
+{{ site.posts.first | searchify }}
 [
 {% for item in site.categories.general %}
 	{% include post.json %},
 {% endfor %}
 {% for item in site.categories.projects %}
-	{% include post.json %},
+	{{ include post.json }},
 {% endfor %}
 false
 ]

@@ -1,2 +1,2 @@
 auto: false
-exclude: bootstrap, README.md, Makefile, CC-LICENSE, MIT-LICENSE, CNAME, search.json
+exclude: bootstrap, README.md, Makefile, CC-LICENSE, MIT-LICENSE, CNAME
