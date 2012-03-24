@@ -44,8 +44,8 @@ def func(**kwargs):
 	# the name selected for kwargs is not important, what's special is the **
 	# any arguments we need that weren't in kwargs, get them from conf_dict
 	kwargs.update(conf_dict)
-	print "{0} first".format(first)
-	print "{0} second".format(second)
+	print "{0} first".format(kwargs['first'])
+	print "{0} second".format(kwargs['second'])
 
 if __name__ == '__main__':
 	func()
@@ -60,6 +60,16 @@ ask questions second
 maybe something more conservative...
 ask questions first
 more questions second
+{% endhighlight %}
+
+An alternative to having default arguments from a config file would be something like this. The values remain hardcoded, unfortunately, but it allows you to have defaults for kwargs.
+
+{% highlight python % }
+def func(**kwargs):
+	# the .get() function takes a second argument, which is returned by default
+	# if there is no value for that key
+	print "{0} first".format(kwargs.get(first, 'shoot'))
+	print "{0} second".format(kwargs.get(second, 'ask questions'))
 {% endhighlight %}
 
 So now we have a program that does a similar thing to our original, but none of the defaults are hardcoded (except the config file, but let's ignore that).
