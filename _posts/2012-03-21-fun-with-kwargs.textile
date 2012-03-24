@@ -64,7 +64,7 @@ more questions second
 
 An alternative to having default arguments from a config file would be something like this. The values remain hardcoded, unfortunately, but it allows you to have defaults for kwargs.
 
-{% highlight python % }
+{% highlight python %}
 def func(**kwargs):
 	# the .get() function takes a second argument, which is returned by default
 	# if there is no value for that key
