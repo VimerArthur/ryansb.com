@@ -1,6 +1,6 @@
 ## About
 
-This repository hosts the HTML, CSS, images, and posts for [ryansb.github.com](http://ryansb.github.com).
+This repository hosts the HTML, CSS, images, and posts for [ryansb.com](http://ryansb.com).
 
 ## Publishing
 
