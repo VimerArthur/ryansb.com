@@ -29,6 +29,9 @@
 #   Show help for one task:
 #     thor help [TASK]
 #
+#
+#TODO: use this command somewhere before static assets are versioned
+	#python -c "from slimmer import css_slimmer; import sys; print css_slimmer(open('_site/css/main.css').read())" > _site/css/compressed_main.css
 
 class Build < Thor  
   BUILD_DIR = "_site/"
@@ -121,6 +124,7 @@ class Build < Thor
   def testing
     invoke :clean
     invoke :less
+    system "ppmtowinicon -output favicon.ico favicon.pnm"
     invoke :jekyll
     invoke :javascript_compile
     invoke :version_static_content
@@ -128,11 +132,12 @@ class Build < Thor
     invoke :html_compress
   end
 
-  desc "server", "builds, prepares, and hosts site locally using thin"
-  method_option :port, :aliases => "-p", :default => 3000
+  desc "server", "builds, prepares, and hosts site locally in /var/ww/html"
   def server
     invoke :testing
-    system "thin start -R #{LIBS_DIR}thin.ru -p #{options[:port]}"
+    system "sudo rm -rf /var/www/html/*"
+    system "sudo cp -r _site/* /var/www/html"
+    system "sudo service nginx restart"
   end
 
   # thor 0.14.6 has a bug that forces args to be defined for invoked tasks if the main task accepts an argument that isn't optional.
