@@ -9,12 +9,12 @@
 
 body {
   background: @bg-default;
-  font: 13.34px @baseFontFamily;
-  font-size: small;
+  font-family: @baseFontFamily;
+  font-size: 1em;
 }
 
 iframe {
-  margin: 0 15px;
+  margin: 0 0.8em;
 }
 
 a {
@@ -39,11 +39,15 @@ p {
   line-height: 19px;
 }
 
-#date { text-align: center; color: #333; font-size: 80%;}
+#date {
+  text-align: center;
+  color: #333;
+  font-size: 0.9em;
+}
 
 #post img {
-  padding: 10px;
-  border: 2px solid #aaa;
+  padding: 1em;
+  border: 0.1em solid #aaa;
   background: #eee;
 }
 
@@ -53,36 +57,9 @@ p {
 /*
 /*****************************************************************************/
 
-.recent {
-  list-style-type: square;
-  list-style-position: outside;
-  color: #FFFEE6;
-  padding-left: 9px;
-  font-size: 95%;
-  text-align: left;
-}
-
-.recent li {
-  margin-bottom: 5px;
-}
-
-.recent a {
-  color: @bare-link;
-}
-
-.recent a:hover {
-  color: @bare-link-hover;
-  text-decoration: underline;
-  background: none;
-}
-
 ul.posts span {
   font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
-}
-
-.topics {
-  padding-top:1in;
+  font-size: 0.8em;
 }
 
 /*****************************************************************************/
@@ -104,7 +81,7 @@ ul.posts span {
   color: @header;
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 50px;
+  font-size: 3.3em;
   font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;
 }
 
@@ -118,14 +95,14 @@ ul.posts span {
 .info .extra {
   color: #aaa;
   text-decoration: none;
-  margin-top: 35px;
-  font-size: 16px;
+  margin-top: 2.7em;
+  font-size: 1.3em;
 }
 
 .info .author {
   color: #fff;
-  font-size: 11px;
-  margin-top: 5px;
+  font-size: 1em;
+  margin-top: 0.4em;
 }
 
 .content {
@@ -144,7 +121,7 @@ ul.posts span {
 .links a, .links a:hover {
   color: #000;
   text-align: center;
-  font-size: 80%;
+  font-size: .8em;
   display: block;
   padding: .25em;
   background: @bare-link-hover;
@@ -156,7 +133,7 @@ ul.posts span {
 
 .links h3 {
   /*padding-top: 2.5em;*/
-  padding-top: 42px;
+  padding: 0px;
   text-align: center; }
 
 .links a:hover
@@ -178,9 +155,8 @@ h2 a { color: #000; }
 h3{
   font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;
   padding: 10px;
-  font-size: 15px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.4em;
 }
 
 #post h3{ margin-left: 5px; }
@@ -206,7 +182,7 @@ h3{
 
 .footer {
   color: #666;
-  margin-top: 1em;
+  margin: 0em;
   overflow: hidden;
   clear: both;
   text-align: center;
@@ -214,9 +190,9 @@ h3{
 
 .footer a {
   color: @bare-link;
-  font-size: 16px;
+  font-size: 1.2em;
   display:inline-block;
-  padding: 10px;
+  padding: 0 3em;
   font-family: "Consolas", "Monaco", "Courier New", "Courier", monospace;
 }
 
@@ -228,11 +204,11 @@ h3{
 
 .footer .languages span, .footer .languages a {
   padding: 0;
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .footer .languages {
-  margin-bottom: 15px;
+  margin: 0px;
 }
 /*****************************************************************************/
 /*
@@ -245,7 +221,7 @@ h3{
   padding: 3px;
   padding-left: 16px;
   display:block;
-  font-size: 13px;
+  font-size: 1.1em;
   font-weight: bold; }
 
 /* standard */
@@ -267,8 +243,8 @@ pre {
   background-color: #eef;
   padding: .4em .4em;
   text-align: left;
-  font-size: 100%;
-  margin: 0px 15px;
+  font-size: 1em;
+  margin: 0px 1.8em;
   overflow: hidden;
 }
 
@@ -284,12 +260,3 @@ pre {
 }
 
 #post li { margin-bottom: 3px; }
-
-
-#related {
-  padding-top: 2em;
-}
-
-#related h2 {
-  padding-bottom: 1em;
-}

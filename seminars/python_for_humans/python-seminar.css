@@ -1,5 +1,5 @@
-@import url(resources/projection.css); /* required to make the slide show run at all */
-@import url(resources/pygment.css); /* required for the fancy syntax highlighting */
+@import url(/seminars/python_for_humans/resources/projection.css); /* required to make the slide show run at all */
+@import url(/seminars/python_for_humans/resources/pygment.css); /* required for the fancy syntax highlighting */
 
 html, body {
   font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 

@@ -1,8 +1,6 @@
 ---
 ---
-{% include bootstrap.css %}
-
-{% include reset.css %}
+{% include positioning.css %}
 
 {% include pygments.css %}
 

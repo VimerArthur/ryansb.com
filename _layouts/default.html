@@ -9,40 +9,38 @@
     <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
   </head>
   <body>
-    <div class="container">
-      <div class="row-fluid">
-        <div class="span8 title">
-          <h1><a href="/">ryansb</a></h1>
-        </div>
-        <div class="span4 info">
-          <div class="extra">builds things for computers</div>
-          <div class="author">Ryan S. Brown</div>
-        </div>
+    <div class="container" role="main">
+      <div class="headline title">
+        <h1><a href="/">ryansb</a></h1>
       </div>
-      <div class="row-fluid">
+      <div class="subheadline info">
+        <div class="extra">builds things for computers</div>
+        <div class="author">Ryan S. Brown</div>
+      </div>
+      <div class="row">
         {{ content }}
       </div>
-      <div class="row-fluid">
-        <div class="span3 links">
+      <div class="row">
+        <div class="quicklist links">
           <h3 id="green">general</h3>
           {% for post in site.categories.general %}
           <a href="{{ post.url }}">{{ post.title }}</a>
           {% endfor %}
         </div>
-        <div class="span3 links">
+        <div class="quicklist links">
           <h3 id="yellow">projects</h3>
           {% for post in site.categories.projects %}
           <a href="{{ post.url }}">{{ post.title }}</a>
           {% endfor %}
         </div>
-        <div class="span3 links">
+        <div class="quicklist links">
           <h3 id="red">seminars</h3>
           <a href="/seminars/vim">vim</a>
           <a href="/seminars/git">git</a>
           <a href="/seminars/python_for_humans">python for humans</a>
           <a href="/seminars/python_for_snakecharmers">python for snakecharmers</a>
         </div>
-        <div class="span3 links">
+        <div class="quicklist links">
           <h3 id="blue">contact</h3>
           <a href="mailto:ryansb@csh.rit.edu">email</a>
           <a href="https://github.com/ryansb">github</a>
@@ -50,8 +48,8 @@
           <a href="https://www.linkedin.com/in/ryansbrown">linkedin</a>
         </div>
       </div>
-      <div class="row-fluid footer">
-        <div class="span12 footer_links">
+      <div class="footer">
+        <div class="footer_links">
           <a href="/about.html">about</a>
           <a href="/resources/resume.pdf">resume</a>
           <a href="https://github.com/ryansb/ryansb.com">code</a>

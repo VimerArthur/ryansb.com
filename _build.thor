@@ -36,11 +36,11 @@
 class Build < Thor  
   BUILD_DIR = "_site/"
   LIBS_DIR = "_libs/"
-  SASS_DIR = "styles"
-  CSS_DIR = "css"
+  SASS_DIR = "_includes/sass"
+  CSS_DIR = "_includes"
   class_option :compressor, :default => "../_libs/htmlcompressor-1.5.3.jar"
 
-  default_task :server
+  default_task :testing
 
   def self.build_dir
     BUILD_DIR
@@ -76,7 +76,7 @@ class Build < Thor
   end
 
   desc "compass", "compile css with compass", :hide => true
-  # method_option :sass_dir, :default => "styles", :required => true
+  # method_option :sass_dir, :default => "_includes/sass", :required => true
   def compass(environment = "development", output_style = "expanded")
     puts "compiling css with compass"
     system "compass compile --sass-dir #{SASS_DIR} --css-dir #{CSS_DIR} -e #{environment} -s #{output_style} --force"
@@ -85,7 +85,6 @@ class Build < Thor
   desc "less", "compile css with less", :hide => true
   def less
     puts "compiling css with less"
-    system "lessc bootstrap/less/bootstrap.less > _includes/bootstrap.css"
     system "lessc _includes/screen.less > _includes/screen.css"
   end
 
@@ -123,6 +122,7 @@ class Build < Thor
   desc "testing", "builds and prepares site for a testing environment"
   def testing
     invoke :clean
+    invoke :compass
     invoke :less
     system "ppmtowinicon -output favicon.ico favicon.pnm"
     invoke :jekyll
