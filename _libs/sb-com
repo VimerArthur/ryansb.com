@@ -1,0 +1,5 @@
+rm -rf /var/www/html/*
+cp -R /tmp/stage/* /var/www/html
+chown -R nginx:nginx /var/www/html
+/etc/init.d/nginx restart
+rm -rf /tmp/stage
