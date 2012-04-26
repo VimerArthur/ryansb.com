@@ -2,8 +2,8 @@
 @import "../1k_grid/_grid.scss";
 
 // establishes page width and centers
-$column-width: 6.25%;
-$gutter-width: 1.14%;
+$column-width: 6.81%;
+$gutter-width: 1.52%;
 $columns: 12;
 
 #container {
@@ -22,7 +22,12 @@ $columns: 12;
   border: none;
 }
 
-// recent posts column
+.sidebar h3{
+  //@include grid-column(3, -2px); //3 columns wide
+  margin-top: 0;
+}
+
+// listing of links
 .quicklist {
   //@include grid-column(3, -2px); //3 columns wide
   @include grid-column(3, 0); //3 columns wide

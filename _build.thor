@@ -132,12 +132,11 @@ class Build < Thor
     invoke :html_compress
   end
 
-  desc "server", "builds, prepares, and hosts site locally in /var/ww/html"
+  desc "server", "builds, prepares, and hosts site locally in /var/www/html"
   def server
     invoke :testing
-    system "sudo rm -rf /var/www/html/*"
-    system "sudo cp -r _site/* /var/www/html"
-    system "sudo service nginx restart"
+    system "scp -r _site gen2.csh.rit.edu:/tmp/stage"
+    system "ssh -C ryansb.com 'sudo sb-com'"
   end
 
   # thor 0.14.6 has a bug that forces args to be defined for invoked tasks if the main task accepts an argument that isn't optional.
