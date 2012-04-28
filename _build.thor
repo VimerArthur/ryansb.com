@@ -135,7 +135,7 @@ class Build < Thor
   desc "server", "builds, prepares, and hosts site locally in /var/www/html"
   def server
     invoke :testing
-    system "scp -r _site gen2.csh.rit.edu:/tmp/stage"
+    system "rsync -azq _site/* gen2.csh.rit.edu:/tmp/stage"
     system "ssh -C ryansb.com 'sudo sb-com'"
   end
 

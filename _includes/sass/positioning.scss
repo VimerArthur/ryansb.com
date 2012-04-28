@@ -48,13 +48,13 @@ $columns: 12;
 
 // header column
 .headline {
-  @include grid-column(8, 0); //8 columns wide
+  @include grid-column(6, 0); //8 columns wide
   border: none;
 }
 
 // subheader column
 .subheadline {
-  @include grid-column(4, 0); //8 columns wide
+  @include grid-column(6, 0); //8 columns wide
   border: none;
 }
 
