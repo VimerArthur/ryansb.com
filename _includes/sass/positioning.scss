@@ -31,6 +31,8 @@ $columns: 12;
 .quicklist {
   //@include grid-column(3, -2px); //3 columns wide
   @include grid-column(3, 0); //3 columns wide
+  min-width: 125px;
+  max-width: 250px;
   border: none;
 }
 
@@ -48,13 +50,13 @@ $columns: 12;
 
 // header column
 .headline {
-  @include grid-column(6, 0); //8 columns wide
+  @include grid-column(7, 0); //8 columns wide
   border: none;
 }
 
 // subheader column
 .subheadline {
-  @include grid-column(6, 0); //8 columns wide
+  @include grid-column(5, 0); //8 columns wide
   border: none;
 }
 
