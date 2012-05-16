@@ -119,6 +119,12 @@ class Build < Thor
     system "ruby #{LIBS_DIR}html_compress.rb #{BUILD_DIR} #{options[:compressor]}"
   end
 
+  desc "css_compress", "minifies all css", :hide => true
+  def css_compress
+    puts "minifying css"
+    system "java -jar #{LIBS_DIR}yuicompressor-2.4.7.jar --type css #{BUILD_DIR}/css/main.css -o #{BUILD_DIR}/css/main.css "
+  end
+
   desc "testing", "builds and prepares site for a testing environment"
   def testing
     invoke :clean
@@ -126,6 +132,7 @@ class Build < Thor
     invoke :less
     system "ppmtowinicon -output favicon.ico favicon.pnm"
     invoke :jekyll
+    invoke :css_compress
     invoke :javascript_compile
     invoke :version_static_content
     invoke :add_base_path
