@@ -19,8 +19,6 @@ branching
 
 * delete feature branches when they are merged into the master branch
 
-* create a branch to experiment in, and delete it if it's not going to work, with nobody knowing it ever existed
-
 
 ---
 # starting with branches
