@@ -6,7 +6,7 @@
 	>>> lambda x: x==4
 	<function <lambda> at 0x7f944ed0e938>
 
-Just like a one-night stand, lambdas are great if you just need a quickie
+Lambdas are great if you just need a quick one-statement function
 
 Pass them to other functions for non-namespace-cluttering Pythonic justice
 
