@@ -1,42 +1,21 @@
-# what is VCS?
-
-* version control system
-* what changed
-* when
-* who did it
+Git Crash Course
+=========
 
 ---
 
-# centralized
-* SVN, RCS, Clearcase
-* central database
-
----
-
-# distributed
-* Git, Mercurial
-* everyone has a copy of the database
-* can have many remotes
-* no final authority
-* locally
-
----
-
-# why care?
-* concurrent collaboration
-* easy merges
+# Git is...
+* distributed (redundant)
+* flexibile
 * network independent
-* redundancy
+* a collection of "commits" that represent changes to code
 
 ---
 
-# why Git?
-* handle massive projects (linux)
-* branching
-* flexibility
-* speed
-* almost everything is local
-* work on planes, trains, and automobiles
+# Git is great for...
+* massive projects (linux kernel...)
+* fast and cheap branching
+* speed (almost everything is local)
+* working on planes, trains, and automobiles
 
 ---
 
@@ -60,19 +39,19 @@
 # three (or four) stages of Git #
 ![](img/three_stages.png)
 
-Protips:
+---
 
-	!bash
-	# set commit message without opening an editor
-	git commit -m 'commit message'
-	# add only parts of what was changed
-	git add -p
+# basic workflow #
+1. ### make some changes
+1. ### stage snapshots of files
+1. ### commit
+1. ### (eventually) push
 
 ---
 
 # a commit has...
 * a checksum
-* a list of all blobs contained in the commit
+* all blobs contained in the commit
 * a comment (please use these)
 
 Format your commit like:
@@ -82,12 +61,4 @@ Format your commit like:
 	longer description of
 	changes, maybe include a bulleted
 	list of changes you made
-
----
-
-# basic workflow #
-1. ### make some changes
-1. ### stage snapshots of files
-1. ### commit
-1. ### (eventually) push
 

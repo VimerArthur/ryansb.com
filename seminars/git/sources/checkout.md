@@ -1,7 +1,7 @@
 # check it out
 
 	!bash
-	$ git log --pretty=oneline --abbrev-commit --decorate
+	$ git log --oneline --decorate
 		1c8ce74 (HEAD, origin/newgitseminar, newgitseminar) Added more on branching
 		4afbe50 Added slides for branching
 		151dd2f Finished converting to vanilla markdown
@@ -19,8 +19,6 @@
 	$ git checkout HEAD~5
 
 All those checkouts go to the same commit
-
----
 
 # check out a specific file
 

@@ -15,7 +15,7 @@
 
 my personal favorite, kinda
 
-![](http://nvie.com/img/2009/12/Screen-shot-2009-12-24-at-11.32.03.png)
+![](img/git_flow.png)
 
 ---
 

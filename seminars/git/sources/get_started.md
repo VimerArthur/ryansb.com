@@ -5,7 +5,7 @@
 
 ---
 
-# getting started
+# start a project
 	!bash
 	$ mkdir mynewproject
 	$ cd mynewproject
@@ -24,15 +24,6 @@
 	 nothing added to commit but untracked files present
 	 (use "git add" to track)
 	$ git add README
-
----
-
-# life cycle of a file
-* untracked
-* tracked
-* modified
-* staged
-* committed
 
 ---
 
@@ -72,24 +63,18 @@
 	 1 files changed, 1 insertions(+), 0 deletions(-)
 	 create mode 100644 README
 	 <Do more commits>
-	$ git log
-	 commit 773c3104e641a9a86d71a99d67d113abf5709b81
-	 Author: Ryan Brown <ryansb@csh.rit.edu>
-	 Date:   Sat Nov 26 18:21:35 2011 -0500
+	$ git log --oneline
+	 773c310 added hello.py
+	 7275078 More verbosity for the README
+	 4f3ea33 Added README
 
-		 added hello.py
+Protips:
 
-	 commit 7275078f623c043cf5a22e552b4fd503c3236471
-	 Author: Ryan Brown <ryansb@csh.rit.edu>
-	 Date:   Sat Nov 26 18:20:45 2011 -0500
-
-		 More verbosity for the README
-
-	 commit 4f3ea3369e9a0b29e41f7aef325a27b62e7938b1
-	 Author: Ryan Brown <ryansb@csh.rit.edu>
-	 Date:   Sat Nov 26 18:19:07 2011 -0500
-
-		 Added README
+	!bash
+	# set commit message without opening an editor
+	git commit -m 'commit message'
+	# add only parts of what was changed
+	git add -p
 
 ---
 
@@ -120,4 +105,4 @@
 # saving keystrokes
 * sometimes add -> commit gets annoying
 * the '-a' option stages all modifications
-* but ensure you want to commit it all
+* but make sure you REALLY want to commit everything
