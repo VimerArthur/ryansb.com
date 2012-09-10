@@ -16,7 +16,7 @@ It adds some convienient features like tab completion, integration with your fav
 
 One of the "magic" functions is "%time" for when you need to know how long an operation takes. The short of it is that IPython makes Python shells fun.
 
-With the release of "version 0.12":http://ipython.org/ipython-doc/stable/whatsnew/version0.12.html) the "ipython kernel" became a fully functional feature. The kernel maintains a single IPython session (maintaining state, loaded modules, variables, etc) and allows clients to attach to it. The kernel was originally used by the QT console, but since then @ipython notebook@ has been introduced, which also depends on the kernel.
+With the release of "version 0.12":http://ipython.org/ipython-doc/stable/whatsnew/version0.12.html the "ipython kernel" became a fully functional feature. The kernel maintains a single IPython session (maintaining state, loaded modules, variables, etc) and allows clients to attach to it. The kernel was originally used by the QT console, but since then @ipython notebook@ has been introduced, which also depends on the kernel.
 
 The kernel is (secretly) an "MQ broker":http://www.zeromq.org/ that can be connected to by many different consoles. For example, @ipython qtconsole --existing@ or a "Vim plugin":https://github.com/ivanov/vim-ipython.
 
