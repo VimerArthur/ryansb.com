@@ -2,8 +2,8 @@
 @import "../compass-grid-plugin/stylesheets/_grid.scss";
 
 // establishes page width and centers
-$column-width: 6.81%;
-$gutter-width: 1.52%;
+$grid-column-width: 6.81%;
+$grid-gutter-width: 1.52%;
 $columns: 12;
 
 #container {
@@ -18,7 +18,7 @@ $columns: 12;
 // recent posts column
 .row {
   @include grid-row;
-  margin-bottom: $gutter-width;
+  margin-bottom: $grid-gutter-width;
   border: none;
 }
 
