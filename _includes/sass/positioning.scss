@@ -22,11 +22,6 @@ $columns: 12;
   border: none;
 }
 
-.sidebar h3{
-  //@include grid-column(3, -2px); //3 columns wide
-  margin-top: 0;
-}
-
 // listing of links
 .quicklist {
   //@include grid-column(3, -2px); //3 columns wide
@@ -34,6 +29,13 @@ $columns: 12;
   min-width: 125px;
   max-width: 250px;
   border: none;
+}
+
+.quicklist h3 {
+  padding: 0 0 5px 0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 // snippet, like on the front page

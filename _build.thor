@@ -119,19 +119,30 @@ class Build < Thor
     system "ruby #{LIBS_DIR}html_compress.rb #{BUILD_DIR} #{options[:compressor]}"
   end
 
+  desc "bipartite", "minifies css using a genetic algorithm", :hide => true
+  def bipartite
+    puts "bipartite algorithm running on CSS"
+    system "echo 'stopstopstop'; python #{LIBS_DIR}css_bipartite_compression.py #{BUILD_DIR}/css/main.css "
+  end
+
   desc "css_compress", "minifies all css", :hide => true
   def css_compress
     puts "minifying css"
     system "java -jar #{LIBS_DIR}yuicompressor-2.4.7.jar --type css #{BUILD_DIR}/css/main.css -o #{BUILD_DIR}/css/main.css "
   end
 
-  desc "testing", "builds and prepares site for a testing environment"
-  def testing
+  desc "test", "builds and prepares site for a testing environment"
+  def test
     invoke :clean
     invoke :compass
     invoke :less
     system "ppmtowinicon -output favicon.ico favicon.pnm"
     invoke :jekyll
+  end
+
+  desc "prod", "minifies CSS and compresses html"
+  def prod
+    invoke :testing
     invoke :css_compress
     invoke :javascript_compile
     invoke :version_static_content
@@ -139,23 +150,11 @@ class Build < Thor
     invoke :html_compress
   end
 
-  desc "server", "builds, prepares, and hosts site locally in /var/www/html"
-  def server
-    invoke :testing
+  desc "deploy", "Pushes the site out to webserver and clears caches"
+  def deploy
+    invoke :prod
     system "rsync -azq _site/* gen2.csh.rit.edu:/tmp/stage"
     system "ssh -C ryansb.com 'sudo sb-com'"
   end
 
-  # thor 0.14.6 has a bug that forces args to be defined for invoked tasks if the main task accepts an argument that isn't optional.
-  # for example, if you remove the [] for `invoke :jekyll, []`, you'll receive an error that the jekyll task was called incorrectly.
-  desc "production", "builds and prepares site for a production environment"
-  def production(cdn)
-    invoke :clean, []
-    invoke :less, []
-    invoke :jekyll, []
-    invoke :javascript_compile, []
-    invoke :version_static_content, [cdn]
-    invoke :add_base_path, []
-    invoke :html_compress, []
-  end
 end

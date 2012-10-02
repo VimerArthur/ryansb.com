@@ -1,16 +1,14 @@
-a:focus{outline:1px dotted invert;}
-hr{
-  border:0 #ccc solid;
-  border-top-width:1px;
-  clear:both;
-  height:0;
-}
-h1{font-size:25px;}
-h2{font-size:23px;}
-h3{font-size:21px;}
-h4{font-size:19px;}
-h5{font-size:17px;}
-h6{font-size:15px;}
+h1{font-size:5.2em;}
+h2{font-size:1.44em;}
+h3{font-size:1.31em;}
 ol{list-style:decimal;}
 ul{list-style:square;}
-p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:10px;}
+ul.posts span{font-size: 0.8em;}
+body{font-size:1em;}
+pre{font-size: 1em;}
+#date {font-size: 0.9em;}
+#more{font-size: 1.1em;}
+.info .extra{font-size: 1.3em;}
+.info .author{font-size: 1em;}
+.links a{font-size: .8em;}
+.footer{font-size: 1.2em;}

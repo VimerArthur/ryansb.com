@@ -3,7 +3,6 @@ layout: post
 title: initial commit
 category: general
 ---
-
 This is the first post to my new blog/personal site/whatever. I'm using "Jekyll":https://github.com/mojombo/jekyll to build static HTML, it seems pretty neat. Big credit to "gitready.com":http://gitready.com for opening their source, and having a heck of a layout.
 
 Testing Jekyll is also wicked nice, because a single command will serve up your new site on localhost:4000.

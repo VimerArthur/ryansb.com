@@ -3,7 +3,6 @@ layout: post
 title: "fun with kwargs"
 category: general
 ---
-
 Ever want to write functions that flexibly receive arguments? What about getting defaults from a configuration on the module level, then have those defaults automatically used by functions in your module?
 
 Well kwargs might be just what you need. "kwarg" is a nickname for "keyword arguments", which you're likely already familiar with in a format like this:

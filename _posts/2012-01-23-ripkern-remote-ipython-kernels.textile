@@ -3,7 +3,6 @@ layout: post
 title: ripkern -- remote ipython kernels
 category: projects
 ---
-
 In lieue of using the standard Python shell, I have been using "IPython":http://ipython.org/ and it's been treating me very well. If you've never tried it, you can now "try it online":http://www.pythonanywhere.com/try-ipython/.
 
 {% highlight bash %}

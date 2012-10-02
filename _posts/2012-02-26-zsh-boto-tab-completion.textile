@@ -3,7 +3,6 @@ layout: post
 title: "zsh-boto: tab completion for s3 and more"
 category: projects
 ---
-
 "zsh":http://zsh.sourceforge.net/ is an awesome shell. It has enhanced "tab completion":http://www.jukie.net/bart/blog/zsh-tab-completion features that go way beyond what you probably expect from a shell. If you don't already use zsh but would like to start, "this":http://zshwiki.org/home/start is a great place to jump in, it has everything you could ever want to know about zsh.
 
 I use zsh as my main shell, especially for the revision control information in my prompt, appreciatively copied from the "grml zshrc,":https://github.com/grml/grml-etc-core/blob/master/etc/zsh/zshrc 2700 lines of more than you need in a shell.

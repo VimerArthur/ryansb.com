@@ -3,7 +3,6 @@ layout: post
 title: "editing remote files with vim and netrw"
 category: general
 ---
-
 As you already know, Vim is a fine tool for editing files locally. Now, you can edit files on other machines. This is great for editing files on your webserver, or any other machine you have shell access to but don't really want to SSH into.
 
 {% highlight bash %}

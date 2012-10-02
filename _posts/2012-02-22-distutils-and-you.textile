@@ -3,7 +3,6 @@ layout: post
 title: distutils and you
 category: general
 ---
-
 Writing a python module is great, but what's really important is getting it out to others so they can make use of it too. What's the best way to do that?
 
 Of course, the best way is to use existing infrastructure in the Python community. "PyPI":http://pypi.python.org/pypi/ is the place to get Python modules. You can browse them on the web, and they are all just a @easy_install@ or @pip install@ away.

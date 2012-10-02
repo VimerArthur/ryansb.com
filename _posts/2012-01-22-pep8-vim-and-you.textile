@@ -3,7 +3,6 @@ layout: post
 title: pep8, vim, and you
 category: general
 ---
-
 While it's true that "PEP8":http://www.python.org/dev/peps/pep-0008/ is only a style guideline, I think it's good to have something to keep you honest.
 
 {% highlight bash %}

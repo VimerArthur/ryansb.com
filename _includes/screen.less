@@ -1,5 +1,5 @@
 @baseFontFamily: Verdana, helvetica, arial, clean, sans-serif;
-@tileFontFamily: "Andale Mono",AndaleMono,Consolas,"Lucida Console",Monaco,monospace;
+@monoFontFamily: "Andale Mono",AndaleMono,Consolas,"Lucida Console",Monaco,monospace;
 @bg-default: #222;
 @bare-link: #AED180;
 @bare-link-hover: #FFE3A3;
@@ -11,7 +11,6 @@
 body {
   background: @bg-default;
   font-family: @baseFontFamily;
-  font-size: 1em;
 }
 
 a {
@@ -36,14 +35,13 @@ a {
 
 p {
   text-align: left;
-  padding: 8px 15px;
-  line-height: 19px;
+  padding: 0.25em 1em;
+  line-height: 1.125em;
 }
 
 #date {
   text-align: center;
   color: #333;
-  font-size: 0.9em;
 }
 
 #post img {
@@ -59,8 +57,7 @@ p {
 /*****************************************************************************/
 
 ul.posts span {
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 0.8em;
+  font-family: @monoFontFamily;
 }
 
 /*****************************************************************************/
@@ -82,8 +79,7 @@ ul.posts span {
   color: @header;
   font-weight: bold;
   margin-bottom: 20px;
-  font-size: 3.3em;
-  font-family: @tileFontFamily;
+  font-family: @monoFontFamily;
 }
 
 .title h1 a:hover {
@@ -97,12 +93,10 @@ ul.posts span {
   color: #aaa;
   text-decoration: none;
   margin-top: 2.7em;
-  font-size: 1.3em;
 }
 
 .info .author {
   color: #fff;
-  font-size: 1em;
   margin-top: 0.4em;
 }
 
@@ -122,7 +116,6 @@ ul.posts span {
 .links a, .links a:hover {
   color: #000;
   text-align: center;
-  font-size: .8em;
   display: block;
   padding: .25em;
   background: @bare-link-hover;
@@ -132,11 +125,6 @@ ul.posts span {
   text-decoration: none;
 }
 
-.links h3 {
-  /*padding-top: 2.5em;*/
-  padding: 0px;
-  text-align: center; }
-
 .links a:hover
 {
   background: @bare-link;
@@ -144,7 +132,6 @@ ul.posts span {
 
 h2{
   padding: 10px;
-  font-size: 21px;
   font-weight: normal;
   text-align: left;
   border-bottom: 2px solid #333;
@@ -154,10 +141,8 @@ h2{
 h2 a { color: #000; }
 
 h3{
-  font-family: @tileFontFamily;
-  padding: 10px;
+  font-family: @monoFontFamily;
   font-weight: bold;
-  font-size: 1.4em;
 }
 
 #post h3{ margin-left: 5px; }
@@ -167,11 +152,7 @@ h3{
 #red { color: #BF3030; }
 #yellow { color: #B3B300; }
 #blue { color: #809FFF; }
-#purple {
-  text-align: center;
-  padding: 0 0 5px;
-  color: #FF80FF;
-}
+#purple { color: #FF80FF; }
 
 .title a.extra:hover {
   color: black;
@@ -191,10 +172,9 @@ h3{
 
 .footer a {
   color: @bare-link;
-  font-size: 1.2em;
   display:inline-block;
   padding: 0 3em;
-  font-family: @tileFontFamily;
+  font-family: @monoFontFamily;
 }
 
 .footer a:hover {
@@ -214,14 +194,14 @@ h3{
   padding: 3px;
   padding-left: 16px;
   display:block;
-  font-size: 1.1em;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* standard */
 
 
 blockquote{
-  font: 14px/22px normal helvetica, sans-serif;
+  font: @monoFontFamily;
   margin: 10px 50px;
   padding-left: 10px;
   padding-top: 10px;
@@ -236,7 +216,6 @@ pre {
   background-color: #eef;
   padding: .4em .4em;
   text-align: left;
-  font-size: 1em;
   margin: 0px 1.8em;
   overflow: hidden;
 }

@@ -3,6 +3,4 @@ layout: post
 title: flash drive automation
 category: projects
 ---
-
-
 Today I flashed over 120 USB sticks for "IGIC":http://ice-gic.ieee-cesoc.org/2010/index.php conference happening at the Strong campus in Rochester. At first the task seemed daunting, but a "quick script":https://gist.github.com/3613000 solved the problem of manual copying pretty handily, and a powered USB hub made it posssible to write to 9 drives at a time. Bash swoops in to provide a handy solution yet again.
