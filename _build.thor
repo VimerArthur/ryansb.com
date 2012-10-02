@@ -122,7 +122,16 @@ class Build < Thor
   desc "bipartite", "minifies css using a genetic algorithm", :hide => true
   def bipartite
     puts "bipartite algorithm running on CSS"
-    system "echo 'stopstopstop'; python #{LIBS_DIR}css_bipartite_compression.py #{BUILD_DIR}/css/main.css "
+    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/screen.css "
+    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/pygments.css "
+    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/text.css "
+  end
+
+  desc "fix_bipartite", "minifies css using a genetic algorithm", :hide => true
+  def fix_bipartite
+    system "mv #{CSS_DIR}/text.css.old #{CSS_DIR}/text.css"
+    system "mv #{CSS_DIR}/pygments.css.old #{CSS_DIR}/pygments.css"
+    system "mv #{CSS_DIR}/screen.css.old #{CSS_DIR}/screen.css"
   end
 
   desc "css_compress", "minifies all css", :hide => true
@@ -131,18 +140,26 @@ class Build < Thor
     system "java -jar #{LIBS_DIR}yuicompressor-2.4.7.jar --type css #{BUILD_DIR}/css/main.css -o #{BUILD_DIR}/css/main.css "
   end
 
-  desc "test", "builds and prepares site for a testing environment"
-  def test
+  desc "base", "Compiles all static assets"
+  def base
     invoke :clean
     invoke :compass
     invoke :less
     system "ppmtowinicon -output favicon.ico favicon.pnm"
+  end
+
+  desc "test", "builds and prepares site for a testing environment"
+  def test
+    invoke :base
     invoke :jekyll
   end
 
   desc "prod", "minifies CSS and compresses html"
   def prod
-    invoke :testing
+    invoke :base
+    invoke :bipartite
+    invoke :jekyll
+    invoke :fix_bipartite
     invoke :css_compress
     invoke :javascript_compile
     invoke :version_static_content
