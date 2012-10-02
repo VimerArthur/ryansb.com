@@ -1,9 +1,10 @@
 import sys
+import zlib
 import tinycss
 import random
 
-class Node(set):
 
+class Node(set):
     def __init__(self, data):
         self.data = data
 
@@ -12,6 +13,7 @@ class Node(set):
 
     def __str__(self):
         return self.data
+
 
 class Left(Node):
     pass
@@ -24,7 +26,7 @@ class Right(Node):
 class BiGraph(object):
     def __init__(self):
         self.nodes = {}
-        self.left    = set()
+        self.left = set()
         self.right = set()
 
     @property
@@ -51,6 +53,7 @@ class BiGraph(object):
         self.add(r)
         l.add(r)
         r.add(l)
+
 
 class BiClique(BiGraph):
     def __init__(self, covering, contents):
@@ -86,7 +89,8 @@ class Covering(set):
 
     @property
     def cost(self):
-        return len(str(self))
+        # use gzip -1 compression because that's what it will be served as
+        return len(zlib.compress(str(self), 1))
 
     def __hash__(self):
         return hash(frozenset(self))
@@ -134,7 +138,8 @@ class Covering(set):
         """
         try:
             b1 = random.sample(self, 1)[0]
-            b2 = random.sample(set(b2 for b2 in self if b1.can_merge(b2) and b1 != b2), 1)[0]
+            b2 = random.sample(set(
+                b2 for b2 in self if b1.can_merge(b2) and b1 != b2), 1)[0]
             self.remove(b1)
             self.remove(b2)
             self.add(BiClique(self, b1.contents | b2.contents))
@@ -180,9 +185,9 @@ class CSS(BiGraph):
     def __init__(self, bicliques):
         super(CSS, self).__init__()
 
-        self.population_size = 30
+        self.population_size = 35
         self.elite = 4
-        self.max_steps = 200
+        self.max_steps = 400
         self.constant_stop = 35
         self.crossover_ratio = 0.8
         self.mutation_ratio = 0.1
@@ -225,12 +230,16 @@ class CSS(BiGraph):
 
     def compress(self):
         print >> sys.stderr, "Cost at beginning:", self.base_covering.cost
-        previous, rounds = None, 0
+        previous = None
 
-        population = [self.base_covering.copy() for i in xrange(self.population_size)]
+        population = sorted(
+            [self.base_covering.copy()
+             for i in xrange(self.population_size)],
+            key=lambda x: x.cost)
 
         for i in range(self.max_steps):
-            nextgen = population[:self.elite]  # copy the best covering in the previous generation
+            # copy the best covering in the previous generation
+            nextgen = population[:self.elite]
             w, s = population[-1].cost, sum(c.cost for c in population)
 
             while len(nextgen) < self.population_size:
@@ -299,7 +308,7 @@ if __name__ == '__main__':
 
     css = CSS(parse(source))
     res = css.compress()
-    with open(sys.argv[1], 'w') as f:
+    with open(sys.argv[1] + ".bp", 'w') as f:
         f.write(str(res))
     print >> sys.stderr, sys.argv[1] + " Compressed: %s characters (%d%% of original)" % (
         res.cost, 100 * res.cost / len(source))
