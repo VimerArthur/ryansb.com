@@ -1,9 +1,14 @@
 ---
+use_bp: no
 ---
 {% include positioning.css %}
 
-{% include pygments.css %}
+{% if page.use_bp %}
+  {% include bp.css %}
+{% endif %}
 
-{% include screen.css %}
-
-{% include text.css %}
+{% if page.use_bp == false %}
+  {% include pygments.css %}
+  {% include screen.css %}
+  {% include text.css %}
+{% endif %}

@@ -1,3 +1,6 @@
 [submodule "_includes/compass-grid-plugin"]
 	path = _includes/compass-grid-plugin
 	url = git://github.com/heygrady/compass-grid-plugin.git
+[submodule "_libs/css_bipartite"]
+	path = _libs/css_bipartite
+	url = git@github.com:ryansb/css-bipartite-compression.git

@@ -122,16 +122,7 @@ class Build < Thor
   desc "bipartite", "minifies css using a genetic algorithm", :hide => true
   def bipartite
     puts "bipartite algorithm running on CSS"
-    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/screen.css "
-    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/pygments.css "
-    system "python #{LIBS_DIR}css_bipartite_compression.py #{CSS_DIR}/text.css "
-  end
-
-  desc "fix_bipartite", "minifies css using a genetic algorithm", :hide => true
-  def fix_bipartite
-    system "mv #{CSS_DIR}/text.css.old #{CSS_DIR}/text.css"
-    system "mv #{CSS_DIR}/pygments.css.old #{CSS_DIR}/pygments.css"
-    system "mv #{CSS_DIR}/screen.css.old #{CSS_DIR}/screen.css"
+    system "python #{LIBS_DIR}css_bipartite/css.py -g 1 #{CSS_DIR}/pygments.css #{CSS_DIR}/screen.css #{CSS_DIR}/text.css -o bp.css"
   end
 
   desc "css_compress", "minifies all css", :hide => true
@@ -159,7 +150,6 @@ class Build < Thor
     invoke :base
     invoke :bipartite
     invoke :jekyll
-    invoke :fix_bipartite
     invoke :css_compress
     invoke :javascript_compile
     invoke :version_static_content
