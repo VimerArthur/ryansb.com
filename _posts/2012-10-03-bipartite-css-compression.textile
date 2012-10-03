@@ -1,0 +1,26 @@
+---
+layout: post
+title: bipartite css compression
+category: projects
+---
+The other day I ran across "this":http://friggeri.net/blog/a-genetic-approach-to-css-compression/ interesting post about using genetic algorithms to find smaller ways to represent CSS with the same final result. As the author pointed out, CSS is rarely served uncompressed, and is usually gzipped.
+
+I made a couple of relatively trivial changes to the algorithm's cost function in my "fork,":https://github.com/ryansb/css-bipartite-compression including using the gzip encoded content to calculate the cost instead of the raw length.
+
+I also added argparse to make the base more extensible, and adding things like the ability to specify an output file, choose the level of gzip encoding, and concatenate multiple files together and run the algorithm on all of them. That last one is particularly important for me, because I have my CSS separated across many files that are all concatenated before they are deployed.
+
+So, now let's see how the different types of compression did.
+
+|_. |_. Compressed |_. Percentage |
+| Raw | 2.03 KB | 100 |
+| Bipartite | 1.82 KB | 89 |
+| Gzip Weighted | 1.78 KB | 87 |
+
+So apparently gzip weighting the algorithm didn't do too much for me, let's look at how it does did for some other common CSS files.
+
+|_. |_. Original |_. Standard |_. Gzip Weighted |
+| google.css | 1677 | 1687(100.5%) | 1636(97%) |
+| hackernews.css | 453 | 443 (97%) | 414(91%) |
+| pygments.css | 435 | 389(89%) | 356(81%) |
+
+Alright, so looks like the gzip-weighted algorithm does 3%-8% better than the normal one, which isn't bad, especially for large files. For large files, it might be worth changing the number of generations before a CSS file is labeled "stable". Right now if no improvement happens for 35 generations, the algorithm considers itself "done".
