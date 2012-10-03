@@ -122,7 +122,7 @@ class Build < Thor
   desc "bipartite", "minifies css using a genetic algorithm", :hide => true
   def bipartite
     puts "bipartite algorithm running on CSS"
-    system "python #{LIBS_DIR}css_bipartite/css.py -g 1 #{CSS_DIR}/pygments.css #{CSS_DIR}/screen.css #{CSS_DIR}/text.css -o bp.css"
+    system "python #{LIBS_DIR}css_bipartite/css.py -g 1 #{CSS_DIR}/pygments.css #{CSS_DIR}/screen.css #{CSS_DIR}/text.css -o #{CSS_DIR}/bp.css"
   end
 
   desc "css_compress", "minifies all css", :hide => true
