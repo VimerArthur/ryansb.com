@@ -69,6 +69,12 @@ class Build < Thor
     system "rm -rf #{BUILD_DIR}*"
   end
 
+  desc "jekylldev", "builds static site", :hide => true
+  def jekylldev
+    puts "serving static site with jekyll"
+    system "jekyll #{BUILD_DIR} --no-future --server"
+  end
+
   desc "jekyll", "builds static site", :hide => true
   def jekyll
     puts "building static site with jekyll"
@@ -135,14 +141,14 @@ class Build < Thor
   def base
     invoke :clean
     invoke :compass
-    invoke :less
+    #invoke :less
     system "ppmtowinicon -output favicon.ico favicon.pnm"
   end
 
   desc "test", "builds and prepares site for a testing environment"
   def test
     invoke :base
-    invoke :jekyll
+    invoke :jekylldev
   end
 
   desc "prod", "minifies CSS and compresses html"

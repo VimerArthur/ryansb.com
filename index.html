@@ -8,11 +8,9 @@ title: main
   <p>{{ first_post.content | truncatehtml: 450 }}</p>
   <a id="more" href="{{ first_post.url }}">Read More &raquo;</a>
 </div>
-<div class="quicklist sidebar">
+<div class="quicklist links">
   <h3 id="purple">recent posts</h3>
-  <div class="links">
-    {% for post in site.posts limit: 7 %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endfor %}
-  </div>
+  {% for post in site.posts limit: 7 %}
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endfor %}
 </div>

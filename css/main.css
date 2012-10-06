@@ -10,5 +10,4 @@ use_bp: no
 {% if page.use_bp == false %}
   {% include pygments.css %}
   {% include screen.css %}
-  {% include text.css %}
 {% endif %}
