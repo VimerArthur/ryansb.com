@@ -163,11 +163,24 @@ class Build < Thor
     invoke :html_compress
   end
 
+  desc "remotecp", "Pushes the site out to webserver and clears caches"
+  def remotecp
+    system "rsync -azq _site/* gen2.csh.rit.edu:/tmp/stage"
+    system "ssh -C ryansb.com 'sudo sb-com'"
+  end
+
   desc "deploy", "Pushes the site out to webserver and clears caches"
   def deploy
     invoke :prod
-    system "rsync -azq _site/* gen2.csh.rit.edu:/tmp/stage"
-    system "ssh -C ryansb.com 'sudo sb-com'"
+    invoke :remotecp
+  end
+
+  desc "quickdeploy", "Deploy straight to production without minifying or versioning"
+  def quickdeploy
+    invoke :base
+    invoke :compass, ["production", "compressed"]
+    invoke :jekyll
+    invoke :remotecp
   end
 
 end
