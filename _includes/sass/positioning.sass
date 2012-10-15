@@ -6,13 +6,15 @@ $grid-column-width: 6.81%
 $grid-gutter-width: 1.52%
 $columns: 12
 
-#container
+.container
+  min-width: 400px
   @include grid-page
 
 // main page sections
 [role="main"]
   // true indicates a row is directly inside a page
   @include grid-row(true)
+  margin: 0% 10%
 
 // recent posts column
 .row
@@ -61,3 +63,16 @@ $columns: 12
 @import "compass/utilities/general/clearfix"
 .clearfix
   @include pie-clearfix
+
+@media (max-width: 760px)
+  .no-mobile
+    display: none
+  .snippet
+    @include grid-column(12, 0)
+  .footer
+    a
+      padding: 0 1em
+  .container
+    margin: 0% 0%
+  .quicklist
+    @include grid-column(4, 0)

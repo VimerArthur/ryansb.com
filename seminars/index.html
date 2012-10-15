@@ -1,0 +1,19 @@
+---
+layout: default
+title: seminars
+---
+<div class="content">
+  <h2>Seminars</h2>
+  <p>
+    Every year I do a series of seminars for the wonderful folk at <a href="http://csh.rit.edu">Computer Science House</a> to get the new members introduced to new tools, and to help those already proficient become monsters with their toolchain of choice. 
+  </p>
+  <p>
+    I keep these seminars up for my own convenience and so that others can customize them. If you notice any errata, feel free to open an issue on <a href="https://github.com/ryansb/ryansb.com">Github</a> I'll be happy to make the fix. Eventually I'll get all my slides to the same web-based presentation format. Unfortunately, there's a seemingly limitless supply of them, meaning I switch constantly while looking for one that stands head and shoulders above the rest.
+  </p>
+</div>
+<div class="quicklist no-mobile">
+  <h3 id="purple">recent posts</h3>
+  {% for post in site.posts limit: 7 %}
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endfor %}
+</div>

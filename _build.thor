@@ -140,19 +140,20 @@ class Build < Thor
   desc "base", "Compiles all static assets"
   def base
     invoke :clean
-    invoke :compass
     system "ppmtowinicon -output favicon.ico favicon.pnm"
   end
 
   desc "test", "builds and prepares site for a testing environment"
   def test
     invoke :base
+    invoke :compass, ["development", "expanded"]
     invoke :jekylldev
   end
 
   desc "prod", "minifies CSS and compresses html"
   def prod
     invoke :base
+    invoke :compass, ["production", "compressed"]
     invoke :bipartite
     invoke :jekyll
     invoke :css_compress

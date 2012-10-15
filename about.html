@@ -5,17 +5,18 @@ title: about
 <div class="snippet content">
   <h2>About</h2>
   <p>
-    Want to get a hold of me? <a href="mailto:sb@ryansb.com">Email me at sb@ryansb.com</a>
+    I'm a software engineer and systems administrator who loves building new stuff, and fixing up old/broken stuff. I'm a senior (finally) at Rochester Institute of Technology in the Applied Networking program with minors in Software Engineering and Applied Communications.
+  </p>
+  <p>
+    I'm available by email at <a href="mailto:sb@ryansb.com">sb@ryansb.com</a> if you'd like to get in touch.
   </p>
   <p>
     And...thanks for reading!
   </p>
 </div>
-<div class="quicklist">
+<div class="quicklist no-mobile">
   <h3 id="purple">recent posts</h3>
-  <div class="links">
-    {% for post in site.posts limit: 7 %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endfor %}
-  </div>
+  {% for post in site.posts limit: 7 %}
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  {% endfor %}
 </div>
