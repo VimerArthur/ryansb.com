@@ -7,7 +7,7 @@ $grid-gutter-width: 1.52%
 $columns: 12
 
 .container
-  min-width: 400px
+  min-width: 300px
   @include grid-page
 
 // main page sections
@@ -23,10 +23,12 @@ $columns: 12
   border: none
 
 // listing of links
-.quicklist
+.med-list
   @include grid-column(3, 0)
   min-width: 125px
   max-width: 250px
+
+.quicklist
   border: none
   h3
     padding: 0 0 5px 0
@@ -64,6 +66,7 @@ $columns: 12
 .clearfix
   @include pie-clearfix
 
+// on mobile devices get rid of some elements
 @media (max-width: 760px)
   .no-mobile
     display: none
@@ -74,5 +77,22 @@ $columns: 12
       padding: 0 1em
   .container
     margin: 0% 0%
-  .quicklist
+  .med-list
     @include grid-column(4, 0)
+
+// stop having lists side-by-side on really small mobile devices
+.portrait-mobile
+  display: none
+
+@media (max-width: 420px)
+  .no-portrait-mobile
+    display: none
+  .portrait-mobile
+    display: block
+  .med-list
+    @include grid-column(6, 0)
+  .portrait-list
+    min-width: 125px
+    @include grid-column(12, 0)
+  h1
+    font-size: 3em
